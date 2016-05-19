@@ -1,12 +1,12 @@
-# Dracula for [vim](http://www.vim.org/)
+# Dracula for [Vim](http://vim.org)
 
-> A dark theme for [vim](:scream: A dark theme for Vim).
+> A dark theme for [Vim](http://vim.org).
 
 ![Screenshot](https://draculatheme.com/assets/img/screenshots/vim.png)
 
 ## Install
 
-All instructions can be found at [https://draculatheme.com/vim/](https://draculatheme.com/vim/).
+All instructions can be found at [draculatheme.com/vim](https://draculatheme.com/vim).
 
 ## License
 
