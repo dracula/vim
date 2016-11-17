@@ -21,7 +21,7 @@ endif
 let g:colors_name = "dracula"
 
 " Not all terminals support italics properly. If yours does, opt-in.
-if !exists("g:dracula_terminal_italics ")
+if !exists("g:dracula_terminal_italics")
   let g:dracula_terminal_italics = 0
 endif
 
