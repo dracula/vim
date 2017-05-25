@@ -8,6 +8,30 @@
 
 All instructions can be found at [draculatheme.com/vim](https://draculatheme.com/vim).
 
+[Vim Plug](https://github.com/junegunn/vim-plug)
+
+    Plug 'NerdPad/dracula-vim'
+
+Usage
+-----
+
+Execute below command in your Vim or paste it into your _.vimrc_:
+
+    colorscheme dracula
+
+Javascript enchancement
+-----------------------
+
+For javascript development, it is recommend to install [vim-javascript](https://github.com/pangloss/vim-javascript), which provide features such as param syntax highlight.
+
+Configuration
+-------------
+
+* Italic
+    
+If you are using a font which support italic, you can use below config to enable the italic form:
+
+    let g:dracula_terminal_italics = 1
 
 ## Team
 
