@@ -12,6 +12,7 @@
 " @author Zeno Rocha <hi@zenorocha.com>
 
 set background=dark
+set termguicolors
 highlight clear
 
 if exists("syntax_on")
