@@ -8,6 +8,17 @@
 
 All instructions can be found at [draculatheme.com/vim](https://draculatheme.com/vim).
 
+If you use vim + pathogen:
+cd ~/.vim
+git submodule add git@github.com:dracula/vim.git bundle/dracula-theme
+
+If you use vim + vundle:
+Plugin 'dracula/vim'
+:PluginInstall
+
+If you aren't so clever just move the dracula.vim file into ~/.vim/colors and add the following lines into your vimrc file:
+syntax on
+color dracula
 
 ## Team
 
