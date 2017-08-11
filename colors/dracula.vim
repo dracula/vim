@@ -163,6 +163,12 @@ hi markdownUrl ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=
 hi markdownUrlTitleDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=NONE
 " }}}
 
+" Syntastic: {{{
+
+hi SyntasticErrorSign guifg=#ff5555 guibg=#44475a
+hi SyntasticWarningSign guifg=#f1fa8c guibg=#44475a
+
+" }}}
 
 "
 "cygwin has an annoying behavior where it resets background to light
