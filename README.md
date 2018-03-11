@@ -16,7 +16,6 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 [![Trevor Heins](https://avatars0.githubusercontent.com/u/1607028?v=3&s=70)](https://github.com/heinst) | [![Blake Williams](https://avatars0.githubusercontent.com/u/342554?v=3&s=70)](https://github.com/BlakeWilliams)
 --- | ---
 [Trevor Heins](https://github.com/heinst) | [Blake Williams](https://github.com/BlakeWilliams)
-https://avatars0.githubusercontent.com/u/342554?s=460&v=4
 
 ## License
 
