@@ -32,8 +32,8 @@ hi VertSplit ctermfg=231 ctermbg=236 cterm=bold guifg=#64666d guibg=#64666d gui=
 hi MatchParen ctermfg=212 ctermbg=NONE cterm=underline guifg=#ff79c6 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=236 cterm=bold guifg=#f8f8f2 guibg=#64666d gui=bold
 hi StatusLineNC ctermfg=231 ctermbg=236 cterm=NONE guifg=#f8f8f2 guibg=#64666d gui=NONE
-hi Pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi PmenuSel ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#44475a gui=NONE
+hi Pmenu ctermfg=15 ctermbg=61 cterm=NONE guifg=#f8f8f2 guibg=#646e96 gui=NONE
+hi PmenuSel ctermfg=16 ctermbg=84 cterm=bold guifg=#282a36 guibg=#50fa7b gui=NONE
 hi IncSearch ctermfg=17 ctermbg=215 cterm=none guifg=#282a36 guibg=#ffb86c gui=none
 hi Search ctermfg=17 ctermbg=84 cterm=none guifg=#282a36 guibg=#50fa7b gui=none
 hi Directory ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
@@ -63,10 +63,12 @@ hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
 hi Operator ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
 hi PreProc ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
 hi Special ctermfg=231 ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=NONE gui=NONE
+hi SpecialComment ctermfg=61 ctermbg=NONE cterm=NONE guifg=#6272a4 guibg=NONE gui=NONE
 hi SpecialKey ctermfg=231 ctermbg=235 cterm=NONE guifg=#525563 guibg=NONE gui=NONE
 hi Statement ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
 hi StorageClass ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
 hi String ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
+hi SpellBad ctermfg=red ctermbg=NONE cterm=underline
 hi Tag ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
 hi Title ctermfg=231 ctermbg=NONE cterm=bold guifg=#f8f8f2 guibg=NONE gui=bold
 hi Todo ctermfg=61 ctermbg=NONE cterm=inverse,bold guifg=#6272a4 guibg=NONE gui=inverse,bold
@@ -118,8 +120,8 @@ hi cssClassName ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=
 hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#6be5fd guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi TabLineFill  guifg=#333333 guibg=#282a36 gui=none
-hi TabLine      guifg=#666666 guibg=#282a36 gui=none
+hi TabLineFill  cterm=NONE ctermbg=236 guifg=#333333 guibg=#282a36 gui=none
+hi TabLine      cterm=NONE ctermfg=7 ctermbg=240 guifg=#666666 guibg=#282a36 gui=none
 hi TabLineSel   guifg=WHITE guibg=#282a36 gui=none
 
 " Elixir {{{
@@ -163,10 +165,41 @@ hi markdownHeadingDelimiter ctermfg=117 ctermbg=NONE cterm=bold guifg=#8be9fd gu
 hi markdownUrl ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
 hi markdownUrlTitleDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=NONE
 " }}}
+" OCaml {{{
+hi ocamlModule ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
+hi ocamlConstructor ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
+hi ocamlType ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
+hi ocamlModPath ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
+hi ocamlTodo ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb86c guibg=NONE gui=italic
+hi ocamlLabel ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=NONE
+hi ocamlFullMod ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
+hi ocamlWith ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
+hi ocamlUnit ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
+" }}}
 
 " Syntastic: {{{
 hi SyntasticErrorSign guifg=#ff5555 guibg=#44475a
 hi SyntasticWarningSign guifg=#f1fa8c guibg=#44475a
+
+" Neovim Terminal Colors {{{
+if has("nvim")
+  let g:terminal_color_0 = "#000000"
+  let g:terminal_color_1 = "#FF5555"
+  let g:terminal_color_2 = "#50FA7B"
+  let g:terminal_color_3 = "#F1FA8C"
+  let g:terminal_color_4 = "#BD93F9"
+  let g:terminal_color_5 = "#FF79C6"
+  let g:terminal_color_6 = "#8BE9FD"
+  let g:terminal_color_7 = "#BFBFBF"
+  let g:terminal_color_8 = "#4D4D4D"
+  let g:terminal_color_9 = "#FF6E67"
+  let g:terminal_color_10 = "#5AF78E"
+  let g:terminal_color_11 = "#F4F99D"
+  let g:terminal_color_12 = "#CAA9FA"
+  let g:terminal_color_13 = "#FF92D0"
+  let g:terminal_color_14 = "#9AEDFE"
+  let g:terminal_color_15 = "#E6E6E6"
+endif
 
 " }}}
 
