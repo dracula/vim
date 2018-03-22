@@ -327,7 +327,6 @@ hi! link markdownBlockquote DraculaCyan
 
 hi! link markdownCode DraculaGreenItalic
 hi! link markdownCodeDelimiter DraculaGreen
-hi! link markdownCodeBlock DraculaYellow
 
 hi! link markdownListMarker DraculaCyan
 hi! link markdownOrderedListMarker DraculaCyan
