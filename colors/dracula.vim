@@ -291,16 +291,6 @@ hi! link cssProp DraculaCyan
 hi! link cssPseudoClassId DraculaGreenItalic
 
 "}}}2
-" Elixir: {{{2
-
-"TODO:
-"hi elixirAtom ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic"
-"hi elixirModuleDeclaration ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic"
-"hi elixirAlias ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=italic"
-"hi elixirInterpolationDelimiter ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=NONE
-"hi elixirStringDelimiter ctermfg=228 ctermbg=NONE cterm=NONE guifg=#f1fa8c guibg=NONE gui=NONE
-
-"}}}2
 " HTML: {{{2
 
 hi! link htmlTag DraculaFg
@@ -312,10 +302,10 @@ hi! link htmlSpecialChar DraculaPurple
 "}}}2
 " JavaScript: {{{2
 
-"TODO:
-"hi javaScriptFunction ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
-"hi javaScriptRailsFunction ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=NONE
-"hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi! link javaScriptBraces Delimiter
+hi! link javaScriptNumber Constant
+hi! link javaScriptNull Constant
+hi! link javaScriptFunction DraculaPink
 
 "}}}2
 " Markdown: {{{2
@@ -348,20 +338,6 @@ hi! link markdownLinkText DraculaPink
 hi! link markdownUrl DraculaLink
 
 "}}}2
-" OCaml: {{{2
-
-"TODO:
-"hi ocamlModule ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
-"hi ocamlConstructor ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
-"hi ocamlType ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
-"hi ocamlModPath ctermfg=141 ctermbg=NONE cterm=NONE guifg=#bd93f9 guibg=NONE gui=NONE
-"hi ocamlTodo ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb86c guibg=NONE gui=italic
-"hi ocamlLabel ctermfg=84 ctermbg=NONE cterm=NONE guifg=#50fa7b guibg=NONE gui=NONE
-"hi ocamlFullMod ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
-"hi ocamlWith ctermfg=117 ctermbg=NONE cterm=NONE guifg=#8be9fd guibg=NONE gui=italic
-"hi ocamlUnit ctermfg=212 ctermbg=NONE cterm=NONE guifg=#ff79c6 guibg=NONE gui=NONE
-
-"}}}2
 " Ruby: {{{2
 
 let g:ruby_operators=1
@@ -388,14 +364,19 @@ hi! link yamlFlowIndicator Delimiter
 "}}}2
 " Vim Script: {{{2
 
-"TODO:
-"hi vimGroupName ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE
-"hi vimGroup ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE
-"hi vimOption ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE
-"hi vimHiCtermFgBg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE
-"hi vimHiGuiFgBg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE
+hi! link vimOption DraculaCyanItalic
+hi! link vimAutoEventList DraculaCyanItalic
+hi! link vimAutoCmdSfxList DraculaCyanItalic
+hi! link vimSetSep Delimiter
+hi! link vimSetMod DraculaPink
+hi! link vimHiBang DraculaPink
+hi! link vimEnvVar DraculaPurple
+hi! link vimUserFunc DraculaGreen
+hi! link vimFunction DraculaGreen
+hi! link vimUserAttrbCmpltFunc DraculaGreen
 
 "}}}2
+
 "}}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
