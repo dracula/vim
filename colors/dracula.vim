@@ -213,7 +213,7 @@ call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
 
 " Tabs
-call s:h('TabLine', s:comment, s:bgdark)
+hi! link TabLine DraculaBoundary
 hi! link TabLineFill DraculaBgDarker
 hi! link TabLineSel Normal
 
@@ -240,8 +240,8 @@ hi! link CursorLineNr DraculaYellow
 hi! link LineNr DraculaComment
 
 " Whitespace / Non-text
+call s:h('CursorLine', s:none, s:subtle) " Required as some plugins will overwrite
 hi! link NonText DraculaSubtle
-hi! link CursorLine DraculaSelection
 hi! link CursorColumn DraculaSelection
 hi! link ColorColumn DraculaSelection
 
