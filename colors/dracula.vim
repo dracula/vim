@@ -110,7 +110,8 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:fg = copy(a:fg)
   let l:bg = get(a:, 1, ['NONE', 'NONE'])
 
-  let l:attr_list = join(get(a:, 2, ['NONE']), ',')
+  let l:attr_list = filter(get(a:, 2, ['NONE']), {idx, val -> val != 0})
+  let l:attrs = len(l:attr_list) > 0 ? join(l:attr_list, ' ') : 'NONE'
 
   " Falls back to coloring foreground group on terminals because
   " nearly all do not support undercurl
@@ -124,7 +125,7 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
         \ 'highlight', a:scope,
         \ 'guifg=' . l:fg[0], 'ctermfg=' . l:fg[1],
         \ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
-        \ 'gui=' . l:attr_list, 'cterm=' . l:attr_list,
+        \ 'gui=' . l:attrs, 'cterm=' . l:attrs,
         \ 'guisp=' . l:special[0],
         \]
 
