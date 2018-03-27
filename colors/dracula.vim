@@ -342,7 +342,6 @@ hi! link cssPseudoClassId DraculaGreenItalic
 hi! link diffFile DraculaGreen
 hi! link diffNewFile DraculaRed
 
-hi! link diffLine DraculaPurpleBold
 hi! link diffLine DraculaCyanItalic
 hi! link diffRemoved DraculaRed
 hi! link diffAdded DraculaGreen
