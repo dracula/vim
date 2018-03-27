@@ -239,6 +239,7 @@ hi! link FoldColumn DraculaSubtle
 " Line Numbers
 hi! link CursorLineNr DraculaYellow
 hi! link LineNr DraculaComment
+hi! link SignColumn DraculaComment
 
 " Whitespace / Non-text
 call s:h('CursorLine', s:none, s:subtle) " Required as some plugins will overwrite
