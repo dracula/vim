@@ -333,6 +333,21 @@ hi! link cssProp DraculaCyan
 hi! link cssPseudoClassId DraculaGreenItalic
 
 "}}}2
+" Git Commit: {{{2
+
+" These groups appear when editing commit messages.
+" They are not part of the Diff interface of vim diff
+
+" The following two are misnomers. Colors are correct.
+hi! link diffFile DraculaGreen
+hi! link diffNewFile DraculaRed
+
+hi! link diffLine DraculaPurpleBold
+hi! link diffLine DraculaCyanItalic
+hi! link diffRemoved DraculaRed
+hi! link diffAdded DraculaGreen
+
+"}}}2
 " HTML: {{{2
 
 hi! link htmlTag DraculaFg
