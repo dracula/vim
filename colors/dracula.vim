@@ -31,27 +31,27 @@ endif
 
 " Palette: {{{2
 
-let s:fg        = ['#F8F8F2', 255] | lockvar s:fg
+let s:fg        = ['#F8F8F2', 255]
 
-let s:bglighter = ['#424450', 238] | lockvar s:bglighter
-let s:bglight   = ['#343746', 237] | lockvar s:bglight
-let s:bg        = ['#282A36', 236] | lockvar s:bg
-let s:bgdark    = ['#21222C', 235] | lockvar s:bgdark
-let s:bgdarker  = ['#191A21', 234] | lockvar s:bgdarker
+let s:bglighter = ['#424450', 238]
+let s:bglight   = ['#343746', 237]
+let s:bg        = ['#282A36', 236]
+let s:bgdark    = ['#21222C', 235]
+let s:bgdarker  = ['#191A21', 234]
 
-let s:subtle    = ['#424450', 238] | lockvar s:subtle
+let s:subtle    = ['#424450', 238]
 
-let s:selection = ['#44475A', 239] | lockvar s:selection
-let s:comment   = ['#6272A4',  61] | lockvar s:comment
-let s:cyan      = ['#8BE9FD', 117] | lockvar s:cyan
-let s:green     = ['#50FA7B',  84] | lockvar s:green
-let s:orange    = ['#FFB86C', 215] | lockvar s:orange
-let s:pink      = ['#FF79C6', 212] | lockvar s:pink
-let s:purple    = ['#BD93F9', 141] | lockvar s:purple
-let s:red       = ['#FF5555', 203] | lockvar s:red
-let s:yellow    = ['#F1FA8C', 228] | lockvar s:yellow
+let s:selection = ['#44475A', 239]
+let s:comment   = ['#6272A4',  61]
+let s:cyan      = ['#8BE9FD', 117]
+let s:green     = ['#50FA7B',  84]
+let s:orange    = ['#FFB86C', 215]
+let s:pink      = ['#FF79C6', 212]
+let s:purple    = ['#BD93F9', 141]
+let s:red       = ['#FF5555', 203]
+let s:yellow    = ['#F1FA8C', 228]
 
-let s:none      = ['NONE', 'NONE'] | lockvar s:none
+let s:none      = ['NONE', 'NONE']
 
 if has('nvim')
   let g:terminal_color_0  = '#44475A'
@@ -104,7 +104,7 @@ let s:attrs = {
       \ 'underline': g:dracula_underline == 1 ? 'underline' : 0,
       \ 'undercurl': g:dracula_undercurl == 1 ? 'undercurl' : 0,
       \ 'inverse': g:dracula_inverse == 1 ? 'inverse' : 0,
-      \} | lockvar s:attrs
+      \}
 
 function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:fg = copy(a:fg)
