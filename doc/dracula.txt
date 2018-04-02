@@ -1,4 +1,4 @@
-*dracula.txt*           For Vim version 8           Last change: 2018 March 27
+*dracula.txt*           For Vim version 8            Last change: 2018 April 02
 *dracula* *vim-dracula*
 
                     |\                          ,,       ~
@@ -72,7 +72,11 @@ Include undercurl attributes in highlighting (only if underline enabled) >
 * *g:dracula_inverse*
 Include inverse attributes in highlighting >
     let g:dracula_inverse = 1
-<
+
+* *g:dracula_colorterm*
+Include background fill colors >
+   let g:dracula_colorterm = 1
+
 ==============================================================================
 CUSTOMIZATION                                            *dracula-customization*
 
