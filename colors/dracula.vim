@@ -1,4 +1,4 @@
-" Dracula Theme: v1.2.7 {{{
+" Dracula Theme: v1.3.2 {{{
 "
 " https://github.com/zenorocha/dracula-theme
 "
@@ -322,7 +322,7 @@ hi! link helpHyperTextJump DraculaLink
 hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
 
-call s:h('MatchParen', s:none, s:pink, [s:attrs.underline])
+call s:h('MatchParen', s:fg, s:pink, [s:attrs.underline])
 call s:h('Conceal', s:comment, s:bglight)
 
 " CSS: {{{2
