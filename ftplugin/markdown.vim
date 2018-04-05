@@ -1,5 +1,3 @@
-
-
 " plasticboy/vim-markdown {{{1
 
 hi! link htmlH1 DraculaPurpleBold

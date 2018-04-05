@@ -386,7 +386,7 @@ hi! link markdownBoldItalic DraculaOrangeBoldItalic
 
 hi! link markdownBlockquote DraculaCyan
 
-hi! link markdownCode DraculaGreenItalic
+hi! link markdownCode DraculaGreen
 hi! link markdownCodeDelimiter DraculaGreen
 
 hi! link markdownListMarker DraculaCyan
