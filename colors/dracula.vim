@@ -53,6 +53,20 @@ let s:yellow    = ['#F1FA8C', 228]
 
 let s:none      = ['NONE', 'NONE']
 
+let g:dracula_palette = {
+      \ 'fg': s:fg,
+      \ 'bg': s:bg,
+      \ 'selection': s:selection,
+      \ 'comment': s:comment,
+      \ 'cyan': s:cyan,
+      \ 'green': s:green,
+      \ 'orange': s:orange,
+      \ 'pink': s:pink,
+      \ 'purple': s:purple,
+      \ 'red': s:red,
+      \ 'yellow': s:yellow,
+      \}
+
 if has('nvim')
   let g:terminal_color_0  = '#44475A'
   let g:terminal_color_1  = '#DE312B'
