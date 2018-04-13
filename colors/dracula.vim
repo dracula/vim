@@ -65,6 +65,12 @@ let g:dracula_palette = {
       \ 'purple': s:purple,
       \ 'red': s:red,
       \ 'yellow': s:yellow,
+      \
+      \ 'bglighter': s:bglighter,
+      \ 'bglight': s:bglight,
+      \ 'bgdark': s:bgdark,
+      \ 'bgdarker': s:bgdarker,
+      \ 'subtle': s:subtle,
       \}
 
 if has('nvim')
