@@ -1,4 +1,4 @@
-" Dracula Theme: v1.3.2 {{{
+" Dracula Theme: v1.4.0 {{{
 "
 " https://github.com/zenorocha/dracula-theme
 "
@@ -134,7 +134,7 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:fg = copy(a:fg)
   let l:bg = get(a:, 1, ['NONE', 'NONE'])
 
-  let l:attr_list = filter(get(a:, 2, ['NONE']), {idx, val -> type(val) == 1})
+  let l:attr_list = filter(get(a:, 2, ['NONE']), 'type(v:val) == 1')
   let l:attrs = len(l:attr_list) > 0 ? join(l:attr_list, ',') : 'NONE'
 
   " Falls back to coloring foreground group on terminals because
