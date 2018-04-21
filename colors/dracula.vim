@@ -352,10 +352,12 @@ hi! link cssBraces Delimiter
 hi! link cssSelectorOp Delimiter
 hi! link cssFunctionComma Delimiter
 hi! link cssAttributeSelector DraculaGreenItalic
+hi! link cssVendor DraculaGreenItalic
 hi! link cssAttrRegion DraculaPink
 hi! link cssUnitDecorators DraculaPink
 hi! link cssProp DraculaCyan
 hi! link cssPseudoClassId DraculaGreenItalic
+hi! link cssNoise DraculaPink
 
 "}}}2
 " Git Commit: {{{2
@@ -431,15 +433,16 @@ hi! link rubyGlobalVariable DraculaPurple
 hi! link rubyRegexpDelimiter DraculaRed
 
 "}}}2
-" YAML: {{{2
+" Sass: {{{2
 
-hi! link yamlBlockMappingKey DraculaCyan
-hi! link yamlPlainScalar DraculaYellow
-hi! link yamlAnchor DraculaPinkItalic
-hi! link yamlAlias DraculaGreenItalicUnderline
-hi! link yamlNodeTag DraculaPink
-hi! link yamlFlowCollection DraculaPink
-hi! link yamlFlowIndicator Delimiter
+hi! link sassProperty cssProp
+hi! link sassMixinName Function
+hi! link sassClass cssClassName
+hi! link sassClassChar cssClassNameDot
+hi! link sassInterpolationDelimiter DraculaPink
+hi! link sassVariableAssignment Operator
+hi! link sassId cssIdentifier
+hi! link sassIdChar cssIdentifier
 
 "}}}2
 " Vim Script: {{{2
@@ -454,6 +457,17 @@ hi! link vimEnvVar DraculaPurple
 hi! link vimUserFunc DraculaGreen
 hi! link vimFunction DraculaGreen
 hi! link vimUserAttrbCmpltFunc DraculaGreen
+
+"}}}2
+" YAML: {{{2
+
+hi! link yamlBlockMappingKey DraculaCyan
+hi! link yamlPlainScalar DraculaYellow
+hi! link yamlAnchor DraculaPinkItalic
+hi! link yamlAlias DraculaGreenItalicUnderline
+hi! link yamlNodeTag DraculaPink
+hi! link yamlFlowCollection DraculaPink
+hi! link yamlFlowIndicator Delimiter
 
 "}}}2
 
