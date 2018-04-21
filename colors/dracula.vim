@@ -437,12 +437,12 @@ hi! link rubyRegexpDelimiter DraculaRed
 
 hi! link sassProperty cssProp
 hi! link sassMixinName Function
-hi! link sassClass DraculaGreen
-hi! link sassClassChar DraculaGreen
+hi! link sassClass cssClassName
+hi! link sassClassChar cssClassNameDot
 hi! link sassInterpolationDelimiter DraculaPink
-hi! link sassVariableAssignment DraculaPink
-hi! link sassId DraculaGreen
-hi! link sassIdChar DraculaGreen
+hi! link sassVariableAssignment Operator
+hi! link sassId cssIdentifier
+hi! link sassIdChar cssIdentifier
 
 "}}}2
 " Vim Script: {{{2
