@@ -278,17 +278,17 @@ hi! link DiffText DraculaDiffText
 hi! link DiffDelete DraculaDiffDelete
 
 "}}}2
-" NetRW: {{{2
-
-hi! link Directory DraculaPurpleBold
-
-" }}}2
 " GitGutter: {{{2
 hi! link GitGutterAdd DraculaGreen
 hi! link GitGutterChange DraculaYellow
 hi! link GitGutterChangeDelete DraculaOrange
 hi! link GitGutterDelete DraculaRed
 "}}}2
+" NetRW: {{{2
+
+hi! link Directory DraculaPurpleBold
+
+" }}}2
 
 " }}}
 " Syntax: {{{
