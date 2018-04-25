@@ -225,7 +225,7 @@ call s:h('DraculaDiffDelete', s:red, s:bgdark)
 
 " Core: {{{2
 set background=dark
-call s:h('Normal', s:fg, g:dracula_colorterm == 1 ? s:bg : s:none)
+call s:h('Normal', s:fg, ( (g:dracula_colorterm == 1) || has("gui_running") ) ? s:bg : s:none)
 
 hi! link Visual DraculaSelection
 hi! link VisualNOS Visual
