@@ -156,6 +156,14 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   execute join(l:hl_string, ' ')
 endfunction
 
+function! s:Background()
+  if g:dracula_colorterm || has("gui_running")
+    return s:bg
+  else
+    return s:none
+  endif
+endfunction
+
 "}}}2
 " Dracula Highlight Groups: {{{2
 
@@ -225,7 +233,7 @@ call s:h('DraculaDiffDelete', s:red, s:bgdark)
 
 " Core: {{{2
 set background=dark
-call s:h('Normal', s:fg, g:dracula_colorterm == 1 ? s:bg : s:none)
+call s:h('Normal', s:fg, s:Background())
 
 hi! link Visual DraculaSelection
 hi! link VisualNOS Visual
