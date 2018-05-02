@@ -22,5 +22,15 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
   augroup END
 endif
 "}}}
+" GitGutter: {{{
+
+if exists('g:gitgutter_enabled')
+  hi! link GitGutterAdd DraculaGreen
+  hi! link GitGutterChange DraculaYellow
+  hi! link GitGutterChangeDelete DraculaOrange
+  hi! link GitGutterDelete DraculaRed
+endif
+
+"}}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
