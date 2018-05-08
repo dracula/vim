@@ -1,4 +1,4 @@
-*dracula.txt*           For Vim version 8            Last change: 2018 April 02
+*dracula.txt*           For Vim version 8               Last change: 2018 May 08
 *dracula* *vim-dracula*
 
                     |\                          ,,       ~

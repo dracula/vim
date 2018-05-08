@@ -1,4 +1,4 @@
-" Dracula Theme: v1.4.0 {{{
+" Dracula Theme: v1.5.0 {{{
 "
 " https://github.com/zenorocha/dracula-theme
 "
