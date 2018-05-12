@@ -2,6 +2,7 @@ if ! exists('b:current_syntax') || b:current_syntax !=# 'typescript'
     finish
 endif
 
+hi! link typescriptAliasDeclaration       Type
 hi! link typescriptArrayMethod            DraculaCyan
 hi! link typescriptArrowFunc              Operator
 hi! link typescriptArrowFuncArg           DraculaOrangeItalic
