@@ -1,6 +1,6 @@
-" Kimbie Theme: v1.5.0 {{{
+" Kimbie Theme: v1.0.0 {{{
 "
-" https://github.com/rdavison/kimbie-theme
+" https://github.com/rdavison/kimbie-vim
 "
 " Copyright 2016, All rights reserved
 "
@@ -32,25 +32,59 @@ endif
 
 " Palette: {{{2
 
-let s:fg        = ['#F8F8F2', 255]
+let s:kimbie_bg="#291804"
+let s:kimbie_green="#088649"
+let s:kimbie_black="#0f0c08"
+let s:kimbie_dark_gray="#131510"
+let s:kimbie_blue="#1b60a5"
+let s:kimbie_brown0="#221a0f"
+let s:kimbie_purple="#2b2a42"
+let s:kimbie_brown1="#362712"
+let s:kimbie_brown2="#423523"
+let s:kimbie_brown3="#51412c"
+let s:kimbie_cyan="#5b7e7a"
+let s:kimbie_brown4="#5e452b"
+let s:kimbie_dark_red="#5f0d0d"
+let s:kimbie_brown5="#645342"
+let s:kimbie_brown6="#6e583b"
+let s:kimbie_orange1="#7c5021"
+let s:kimbie_dark_yellow="#7e602c"
+let s:kimbie_brown7="#7f5d38"
+let s:kimbie_brown8="#84613d"
+let s:kimbie_yellow_green="#889b4a"
+let s:kimbie_light_blue="#8ab1b0"
+let s:kimbie_salmon="#98676a"
+let s:kimbie_tomato="#9d2f23"
+let s:kimbie_brown9="#a57a4c"
+let s:kimbie_gray="#adadad"
+let s:kimbie_brown10="#d3af86"
+let s:kimbie_hot_pink="#dc3958"
+let s:kimbie_hot_pink2="#e3546c"
+let s:kimbie_brown11="#e3b583"
+let s:kimbie_orange="#f06431"
+let s:kimbie_goldenrod="#f79a32"
+let s:kimbie_eggshell="#f8f8f0"
+let s:kimbie_eggshell2="#e8c097"
 
-let s:bglighter = ['#424450', 238]
-let s:bglight   = ['#343746', 237]
-let s:bg        = ['#282A36', 236]
-let s:bgdark    = ['#21222C', 235]
-let s:bgdarker  = ['#191A21', 234]
+let s:fg        = [s:kimbie_eggshell2, 255]
 
-let s:subtle    = ['#424450', 238]
+let s:bglighter = [s:kimbie_brown5, 238]
+let s:bglight   = [s:kimbie_brown4, 237]
+let s:bg        = [s:kimbie_brown0, 236]
+let s:bgdark    = [s:kimbie_brown2, 235]
+let s:bgdarker  = [s:kimbie_brown1, 234]
 
-let s:selection = ['#44475A', 239]
-let s:comment   = ['#6272A4',  61]
-let s:cyan      = ['#8BE9FD', 117]
-let s:green     = ['#50FA7B',  84]
-let s:orange    = ['#FFB86C', 215]
-let s:pink      = ['#FF79C6', 212]
-let s:purple    = ['#BD93F9', 141]
-let s:red       = ['#FF5555', 203]
-let s:yellow    = ['#F1FA8C', 228]
+let s:subtle    = [s:kimbie_brown1, 238]
+
+let s:selection = [s:kimbie_brown4, 239]
+let s:comment   = [s:kimbie_brown7,  61]
+let s:cyan      = [s:kimbie_light_blue, 117]
+let s:green     = [s:kimbie_yellow_green,  84]
+let s:orange    = [s:kimbie_orange, 215]
+let s:pink      = [s:kimbie_hot_pink, 212]
+let s:purple    = [s:kimbie_salmon, 141]
+let s:red       = [s:kimbie_tomato, 203]
+let s:yellow    = [s:kimbie_goldenrod, 228]
 
 let s:none      = ['NONE', 'NONE']
 
@@ -289,14 +323,14 @@ hi! link SpellLocal KimbieWarnLine
 hi! link SpellCap KimbieInfoLine
 hi! link SpellRare KimbieInfoLine
 
-hi! link Constant KimbiePurple
+hi! link Constant KimbieYellow
 hi! link String KimbieYellow
 hi! link Character KimbiePink
 hi! link Number Constant
 hi! link Boolean Constant
 hi! link Float Constant
 
-hi! link Identifier KimbieFg
+hi! link Identifier KimbieCyan
 hi! link Function KimbieGreen
 
 hi! link Statement KimbiePink
