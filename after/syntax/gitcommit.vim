@@ -3,10 +3,10 @@ if ! exists('b:current_syntax') || b:current_syntax !=# 'gitcommit'
 endif
 
 " The following two are misnomers. Colors are correct.
-hi! link diffFile    DraculaGreen
-hi! link diffNewFile DraculaRed
+hi! link diffFile    KimbieGreen
+hi! link diffNewFile KimbieRed
 
-hi! link diffAdded   DraculaGreen
-hi! link diffLine    DraculaCyanItalic
-hi! link diffRemoved DraculaRed
+hi! link diffAdded   KimbieGreen
+hi! link diffLine    KimbieCyanItalic
+hi! link diffRemoved KimbieRed
 

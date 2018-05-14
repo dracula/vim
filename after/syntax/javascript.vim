@@ -5,5 +5,5 @@ endif
 hi! link javaScriptBraces   Delimiter
 hi! link javaScriptNumber   Constant
 hi! link javaScriptNull     Constant
-hi! link javaScriptFunction DraculaPink
+hi! link javaScriptFunction KimbiePink
 

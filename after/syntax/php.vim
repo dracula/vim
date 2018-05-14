@@ -3,7 +3,7 @@ if ! exists('b:current_syntax') || b:current_syntax !=# 'php'
 endif
 
 hi! link phpClass           Type
-hi! link phpDocTags         DraculaCyanItalic
+hi! link phpDocTags         KimbieCyanItalic
 hi! link phpFunction        Function
 hi! link phpParent          Normal
-hi! link phpSpecialFunction DraculaCyan
+hi! link phpSpecialFunction KimbieCyan

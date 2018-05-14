@@ -4,31 +4,31 @@ endif
 
 if b:current_syntax ==# 'mkd'
   " plasticboy/vim-markdown {{{1
-  hi! link htmlBold       DraculaOrangeBold
-  hi! link htmlBoldItalic DraculaOrangeBoldItalic
-  hi! link htmlH1         DraculaPurpleBold
-  hi! link htmlItalic     DraculaYellowItalic
-  hi! link mkdBlockquote  DraculaYellowItalic
-  hi! link mkdBold        DraculaOrangeBold
-  hi! link mkdBoldItalic  DraculaOrangeBoldItalic
-  hi! link mkdCode        DraculaGreen
-  hi! link mkdCodeEnd     DraculaGreen
-  hi! link mkdCodeStart   DraculaGreen
-  hi! link mkdInlineUrl   DraculaLink
-  hi! link mkdItalic      DraculaYellowItalic
-  hi! link mkdLink        DraculaPink
-  hi! link mkdListItem    DraculaCyan
-  hi! link mkdRule        DraculaComment
-  hi! link mkdUrl         DraculaLink
+  hi! link htmlBold       KimbieOrangeBold
+  hi! link htmlBoldItalic KimbieOrangeBoldItalic
+  hi! link htmlH1         KimbiePurpleBold
+  hi! link htmlItalic     KimbieYellowItalic
+  hi! link mkdBlockquote  KimbieYellowItalic
+  hi! link mkdBold        KimbieOrangeBold
+  hi! link mkdBoldItalic  KimbieOrangeBoldItalic
+  hi! link mkdCode        KimbieGreen
+  hi! link mkdCodeEnd     KimbieGreen
+  hi! link mkdCodeStart   KimbieGreen
+  hi! link mkdInlineUrl   KimbieLink
+  hi! link mkdItalic      KimbieYellowItalic
+  hi! link mkdLink        KimbiePink
+  hi! link mkdListItem    KimbieCyan
+  hi! link mkdRule        KimbieComment
+  hi! link mkdUrl         KimbieLink
   "}}}1
 elseif b:current_syntax ==# 'markdown'
   " Builtin: {{{1
-  hi! link markdownBlockquote        DraculaCyan
-  hi! link markdownBold              DraculaOrangeBold
-  hi! link markdownBoldItalic        DraculaOrangeBoldItalic
-  hi! link markdownCode              DraculaGreen
-  hi! link markdownCodeDelimiter     DraculaGreen
-  hi! link markdownH1                DraculaPurpleBold
+  hi! link markdownBlockquote        KimbieCyan
+  hi! link markdownBold              KimbieOrangeBold
+  hi! link markdownBoldItalic        KimbieOrangeBoldItalic
+  hi! link markdownCode              KimbieGreen
+  hi! link markdownCodeDelimiter     KimbieGreen
+  hi! link markdownH1                KimbiePurpleBold
   hi! link markdownH2                markdownH1
   hi! link markdownH3                markdownH1
   hi! link markdownH4                markdownH1
@@ -36,12 +36,12 @@ elseif b:current_syntax ==# 'markdown'
   hi! link markdownH6                markdownH1
   hi! link markdownHeadingDelimiter  markdownH1
   hi! link markdownHeadingRule       markdownH1
-  hi! link markdownItalic            DraculaYellowItalic
-  hi! link markdownLinkText          DraculaPink
-  hi! link markdownListMarker        DraculaCyan
-  hi! link markdownOrderedListMarker DraculaCyan
-  hi! link markdownRule              DraculaComment
-  hi! link markdownUrl               DraculaLink
+  hi! link markdownItalic            KimbieYellowItalic
+  hi! link markdownLinkText          KimbiePink
+  hi! link markdownListMarker        KimbieCyan
+  hi! link markdownOrderedListMarker KimbieCyan
+  hi! link markdownRule              KimbieComment
+  hi! link markdownUrl               KimbieLink
   "}}}
 endif
 

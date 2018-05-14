@@ -3,13 +3,13 @@ if ! exists('b:current_syntax') || b:current_syntax !=# 'css'
 endif
 
 hi! link cssAttrComma         Delimiter
-hi! link cssAttrRegion        DraculaPink
-hi! link cssAttributeSelector DraculaGreenItalic
+hi! link cssAttrRegion        KimbiePink
+hi! link cssAttributeSelector KimbieGreenItalic
 hi! link cssBraces            Delimiter
 hi! link cssFunctionComma     Delimiter
-hi! link cssNoise             DraculaPink
-hi! link cssProp              DraculaCyan
-hi! link cssPseudoClassId     DraculaGreenItalic
+hi! link cssNoise             KimbiePink
+hi! link cssProp              KimbieCyan
+hi! link cssPseudoClassId     KimbieGreenItalic
 hi! link cssSelectorOp        Delimiter
-hi! link cssUnitDecorators    DraculaPink
-hi! link cssVendor            DraculaGreenItalic
+hi! link cssUnitDecorators    KimbiePink
+hi! link cssVendor            KimbieGreenItalic

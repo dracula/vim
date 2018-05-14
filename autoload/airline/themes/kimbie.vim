@@ -1,4 +1,4 @@
-" Dracula Airline Theme: {{{
+" Kimbie Airline Theme: {{{
 "
 " Copyright 2016, All rights reserved
 "
@@ -14,12 +14,12 @@
 " more attr-list items as input, transforms it to the format accepted by
 " airline#themes#generate_color_map and returns that value
 func! s:clr(fg, bg, ...)
-  let l:fg = get(g:dracula_palette, a:fg)
-  let l:bg = get(g:dracula_palette, a:bg)
+  let l:fg = get(g:kimbie_palette, a:fg)
+  let l:bg = get(g:kimbie_palette, a:bg)
   if ! type(l:fg) == 3
-    echoerr 'Color undefined in dracula_palette: ' . a:fg
+    echoerr 'Color undefined in kimbie_palette: ' . a:fg
   elseif ! type(l:bg) == 3
-    echoerr 'Color undefined in dracula_palette: ' . a:fg
+    echoerr 'Color undefined in kimbie_palette: ' . a:fg
   endif
   return [ l:fg[0], l:bg[0], l:fg[1], l:bg[1] ] + filter(copy(a:000), 'type(v:val) == 1 && len(v:val) > 0')
 endfunc
@@ -42,7 +42,7 @@ endfunc
 
 "}}}
 
-let g:airline#themes#dracula#palette = {
+let g:airline#themes#kimbie#palette = {
 \   'normal': s:color_map(
 \       ['bg', 'purple'],
 \       ['fg', 'comment'],
@@ -109,7 +109,7 @@ let g:airline#themes#dracula#palette = {
 " Extensions: {{{
 " CtrlP: {{{2
 if exists('g:loaded_ctrlp')
-  let g:airline#themes#dracula#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
+  let g:airline#themes#kimbie#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
         \ s:clr('fg', 'selection'),
         \ s:clr('fg', 'comment'),
         \ s:clr('fg', 'purple'),

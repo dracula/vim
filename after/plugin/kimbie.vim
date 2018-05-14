@@ -6,16 +6,16 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
         \ 'hl':      ['fg', 'Search'],
         \ 'fg+':     ['fg', 'Normal'],
         \ 'bg+':     ['bg', 'Normal'],
-        \ 'hl+':     ['fg', 'DraculaOrange'],
-        \ 'info':    ['fg', 'DraculaPurple'],
+        \ 'hl+':     ['fg', 'KimbieOrange'],
+        \ 'info':    ['fg', 'KimbiePurple'],
         \ 'border':  ['fg', 'Ignore'],
-        \ 'prompt':  ['fg', 'DraculaGreen'],
+        \ 'prompt':  ['fg', 'KimbieGreen'],
         \ 'pointer': ['fg', 'Exception'],
         \ 'marker':  ['fg', 'Keyword'],
         \ 'spinner': ['fg', 'Label'],
         \ 'header':  ['fg', 'Comment'] }
 
-  augroup dracula_fzf
+  augroup kimbie_fzf
     autocmd!
     autocmd  FileType fzf set laststatus=0 noshowmode noruler
           \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
@@ -25,10 +25,10 @@ endif
 " GitGutter: {{{
 
 if exists('g:gitgutter_enabled')
-  hi! link GitGutterAdd DraculaGreen
-  hi! link GitGutterChange DraculaYellow
-  hi! link GitGutterChangeDelete DraculaOrange
-  hi! link GitGutterDelete DraculaRed
+  hi! link GitGutterAdd KimbieGreen
+  hi! link GitGutterChange KimbieYellow
+  hi! link GitGutterChangeDelete KimbieOrange
+  hi! link GitGutterDelete KimbieRed
 endif
 
 "}}}

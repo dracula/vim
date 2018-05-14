@@ -2,13 +2,13 @@ if ! exists('b:current_syntax') || b:current_syntax !=# 'vim'
     finish
 endif
 
-hi! link vimAutoCmdSfxList     DraculaCyanItalic
-hi! link vimAutoEventList      DraculaCyanItalic
-hi! link vimEnvVar             DraculaPurple
-hi! link vimFunction           DraculaGreen
-hi! link vimHiBang             DraculaPink
-hi! link vimOption             DraculaCyanItalic
-hi! link vimSetMod             DraculaPink
+hi! link vimAutoCmdSfxList     KimbieCyanItalic
+hi! link vimAutoEventList      KimbieCyanItalic
+hi! link vimEnvVar             KimbiePurple
+hi! link vimFunction           KimbieGreen
+hi! link vimHiBang             KimbiePink
+hi! link vimOption             KimbieCyanItalic
+hi! link vimSetMod             KimbiePink
 hi! link vimSetSep             Delimiter
-hi! link vimUserAttrbCmpltFunc DraculaGreen
-hi! link vimUserFunc           DraculaGreen
+hi! link vimUserAttrbCmpltFunc KimbieGreen
+hi! link vimUserFunc           KimbieGreen
