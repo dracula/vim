@@ -12,6 +12,7 @@
 " @author Derek Sifford <dereksifford@gmail.com>
 " @author Zeno Rocha <hi@zenorocha.com>
 " @author Richard Davison <@rdavison>
+" @author Jan T. Sott <@idleberg>
 scriptencoding utf8
 " }}}
 
