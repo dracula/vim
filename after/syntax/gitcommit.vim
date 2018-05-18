@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'gitcommit'
+if dracula#should_abort('gitcommit')
     finish
 endif
 

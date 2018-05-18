@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'vim'
+if dracula#should_abort('vim')
     finish
 endif
 

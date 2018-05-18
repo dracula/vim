@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'typescriptreact'
+if dracula#should_abort('typescriptreact')
     finish
 endif
 

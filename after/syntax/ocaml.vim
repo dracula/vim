@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'ocaml'
+if dracula#should_abort('ocaml')
     finish
 endif
 
