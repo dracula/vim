@@ -2,7 +2,7 @@ augroup dracula_fzf
   autocmd!
 augroup END
 
-if ! exists('g:colors_name') || g:colors_name !=# 'dracula'
+if dracula#should_abort()
   finish
 endif
 
