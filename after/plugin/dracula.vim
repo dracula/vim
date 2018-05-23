@@ -1,7 +1,3 @@
-augroup dracula_fzf
-  autocmd!
-augroup END
-
 if dracula#should_abort()
   finish
 endif
@@ -22,14 +18,6 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
         \ 'marker':  ['fg', 'Keyword'],
         \ 'spinner': ['fg', 'Label'],
         \ 'header':  ['fg', 'Comment'] }
-
-  let s:laststatus = &laststatus
-  let s:showmode = &showmode == 0 ? 'showmode' : 'noshowmode'
-  let s:ruler = &ruler == 0 ? 'ruler' : 'noruler'
-  augroup dracula_fzf
-    autocmd  FileType fzf set laststatus=0 noshowmode noruler
-          \| autocmd BufLeave <buffer> exec 'set laststatus=' .s:laststatus . ' ' . s:showmode . ' ' . s:ruler
-  augroup END
 endif
 "}}}
 " GitGutter: {{{
