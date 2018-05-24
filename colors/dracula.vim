@@ -326,8 +326,6 @@ hi! link helpHyperTextJump DraculaLink
 hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
 
-hi! link xmlEndTag xmlTag
-
 "}}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
