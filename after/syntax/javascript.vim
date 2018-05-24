@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'javascript'
+if dracula#should_abort('javascript')
     finish
 endif
 

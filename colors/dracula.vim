@@ -210,8 +210,7 @@ call s:h('DraculaRedInverse', s:fg, s:red)
 call s:h('DraculaYellow', s:yellow)
 call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
 
-call s:h('DraculaError', s:red, s:none, [s:attrs.undercurl], s:red)
-call s:h('DraculaWarn', s:orange, s:none, [s:attrs.undercurl], s:orange)
+call s:h('DraculaError', s:red, s:none, [], s:red)
 
 call s:h('DraculaErrorLine', s:none, s:none, [s:attrs.undercurl], s:red)
 call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)

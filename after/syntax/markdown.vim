@@ -1,5 +1,5 @@
-if ! exists('b:current_syntax')
-  finish
+if dracula#should_abort('markdown', 'mkd')
+    finish
 endif
 
 if b:current_syntax ==# 'mkd'

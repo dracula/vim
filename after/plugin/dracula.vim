@@ -1,3 +1,7 @@
+if dracula#should_abort()
+  finish
+endif
+
 " Fzf: {{{
 if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
   let g:fzf_colors = {
@@ -14,16 +18,12 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
         \ 'marker':  ['fg', 'Keyword'],
         \ 'spinner': ['fg', 'Label'],
         \ 'header':  ['fg', 'Comment'] }
-
-  augroup dracula_fzf
-    autocmd!
-    autocmd  FileType fzf set laststatus=0 noshowmode noruler
-          \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
-  augroup END
 endif
 "}}}
 " GitGutter: {{{
 
+" FIXME: This can be removed once airblade/vim-gitgutter#520 closes
+" see: https://github.com/airblade/vim-gitgutter/issues/520#issuecomment-389931281
 if exists('g:gitgutter_enabled')
   hi! link GitGutterAdd DraculaGreen
   hi! link GitGutterChange DraculaYellow

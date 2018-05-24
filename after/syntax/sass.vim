@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'sass'
+if dracula#should_abort('sass')
     finish
 endif
 

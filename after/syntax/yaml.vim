@@ -1,4 +1,4 @@
-if ! exists('b:current_syntax') || b:current_syntax !=# 'yaml'
+if dracula#should_abort('yaml')
     finish
 endif
 
