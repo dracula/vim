@@ -243,8 +243,10 @@ hi! link ColorColumn  DraculaSelection
 hi! link CursorColumn DraculaSelection
 hi! link CursorLineNr DraculaYellow
 hi! link DiffAdd      DraculaGreen
+hi! link DiffAdded    DiffAdd
 hi! link DiffChange   DraculaDiffChange
 hi! link DiffDelete   DraculaDiffDelete
+hi! link DiffRemoved  DiffDelete
 hi! link DiffText     DraculaDiffText
 hi! link Directory    DraculaPurpleBold
 hi! link ErrorMsg     DraculaRedInverse
