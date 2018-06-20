@@ -107,6 +107,21 @@ let g:airline#themes#dracula#palette = {
 \}
 
 " Extensions: {{{
+" Tabline: {{{
+if get(g:, 'airline#extensions#tabline#enabled', 0)
+  let g:airline#themes#dracula#palette.tabline = {
+        \ 'airline_tabfill': s:clr('bg', 'bg'),
+        \
+        \ 'airline_tab': s:clr('comment', 'bg'),
+        \ 'airline_tabsel': s:clr('white', 'bg', 'bold'),
+        \ 'airline_tabmod': s:clr('green', 'bg'),
+        \
+        \ 'airline_tab_right': s:clr('comment', 'bg'),
+        \ 'airline_tabsel_right': s:clr('white', 'bg', 'bold'),
+        \ 'airline_tabmod_right': s:clr('green', 'bg'),
+        \}
+endif
+"}}}
 " CtrlP: {{{2
 if exists('g:loaded_ctrlp')
   let g:airline#themes#dracula#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
