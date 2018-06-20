@@ -15,11 +15,14 @@ hi! link typescriptClassName              Type
 hi! link typescriptDateMethod             DraculaCyan
 hi! link typescriptDateStaticMethod       Function
 hi! link typescriptDecorator              DraculaGreenItalic
+hi! link typescriptDefaultParam           Operator
 hi! link typescriptES6SetMethod           DraculaCyan
 hi! link typescriptEndColons              Normal
 hi! link typescriptEnum                   Type
 hi! link typescriptEnumKeyword            Keyword
+hi! link typescriptFuncComma              Normal
 hi! link typescriptFuncKeyword            Keyword
+hi! link typescriptFuncTypeArrow          Operator
 hi! link typescriptGlobal                 Type
 hi! link typescriptGlobalMethod           DraculaCyan
 hi! link typescriptGlobalObjects          Type
@@ -39,5 +42,6 @@ hi! link typescriptPredefinedType         Type
 hi! link typescriptTernaryOp              Operator
 hi! link typescriptTypeAnnotation         Special
 hi! link typescriptTypeCast               Operator
+hi! link typescriptTypeParameter          DraculaOrangeItalic
 hi! link typescriptUnaryOp                Operator
 hi! link typescriptVariable               Keyword
