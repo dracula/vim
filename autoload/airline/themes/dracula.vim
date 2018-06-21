@@ -113,11 +113,11 @@ if get(g:, 'airline#extensions#tabline#enabled', 0)
         \ 'airline_tabfill': s:clr('bg', 'bg'),
         \
         \ 'airline_tab': s:clr('comment', 'bg'),
-        \ 'airline_tabsel': s:clr('white', 'bg', 'bold'),
+        \ 'airline_tabsel': s:clr('fg', 'bg', 'bold'),
         \ 'airline_tabmod': s:clr('green', 'bg'),
         \
         \ 'airline_tab_right': s:clr('comment', 'bg'),
-        \ 'airline_tabsel_right': s:clr('white', 'bg', 'bold'),
+        \ 'airline_tabsel_right': s:clr('fg', 'bg', 'bold'),
         \ 'airline_tabmod_right': s:clr('green', 'bg'),
         \}
 endif
