@@ -14,3 +14,4 @@ hi! link rubyInstanceVariable       DraculaPurpleItalic
 hi! link rubyInterpolationDelimiter DraculaPink
 hi! link rubyRegexpDelimiter        DraculaRed
 hi! link rubyStringDelimiter        DraculaYellow
+hi! link rubyConstant               DraculaPurple
