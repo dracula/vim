@@ -1,4 +1,4 @@
-" Dracula Theme: v1.5.0 {{{
+" Dracula Theme: {{{
 "
 " https://github.com/zenorocha/dracula-theme
 "
@@ -279,6 +279,13 @@ hi! link WarningMsg   DraculaOrangeInverse
 call s:h('MatchParen', s:fg, s:pink, [s:attrs.underline])
 call s:h('Conceal', s:comment, s:bglight)
 
+" Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
+if has('nvim')
+  hi! link SpecialKey DraculaRed
+else
+  hi! link SpecialKey DraculaSubtle
+endif
+
 hi! link Comment DraculaComment
 hi! link Underlined DraculaFgUnderline
 hi! link Todo DraculaTodo
@@ -321,7 +328,6 @@ hi! link Type DraculaCyanItalic
 hi! link Delimiter DraculaFg
 
 hi! link Special DraculaPink
-hi! link SpecialKey DraculaSubtle
 hi! link SpecialComment DraculaCyanItalic
 hi! link Tag DraculaCyan
 hi! link helpHyperTextJump DraculaLink

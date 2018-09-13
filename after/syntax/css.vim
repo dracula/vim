@@ -10,6 +10,5 @@ hi! link cssFunctionComma     Delimiter
 hi! link cssNoise             DraculaPink
 hi! link cssProp              DraculaCyan
 hi! link cssPseudoClassId     DraculaGreenItalic
-hi! link cssSelectorOp        Delimiter
 hi! link cssUnitDecorators    DraculaPink
 hi! link cssVendor            DraculaGreenItalic
