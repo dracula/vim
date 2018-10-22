@@ -33,4 +33,16 @@ endif
 
 "}}}
 
+" ALE: {{{
+if exists('g:ale_enabled')
+  hi! link ALEError DraculaErrorLine
+  hi! link ALEWarning DraculaWarningLine
+  hi! link ALEInfo DraculaInfoLine
+
+  hi! link ALEErrorSign DraculaError
+  hi! link ALEWarningSign DraculaWarning
+  hi! link ALEInfoSign DraculaInfo
+endif
+" }}}
+
 " vim: fdm=marker ts=2 sts=2 sw=2:
