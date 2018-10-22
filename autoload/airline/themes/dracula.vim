@@ -110,14 +110,14 @@ let g:airline#themes#dracula#palette = {
 " Tabline: {{{
 if get(g:, 'airline#extensions#tabline#enabled', 0)
   let g:airline#themes#dracula#palette.tabline = {
-        \ 'airline_tabfill': s:clr('bg', 'bg'),
+        \ 'airline_tabfill': s:clr('bg', 'bglight'),
         \
         \ 'airline_tab': s:clr('comment', 'bg'),
-        \ 'airline_tabsel': s:clr('fg', 'bg', 'bold'),
+        \ 'airline_tabsel': s:clr('bg', 'purple'),
         \ 'airline_tabmod': s:clr('green', 'bg'),
         \
         \ 'airline_tab_right': s:clr('comment', 'bg'),
-        \ 'airline_tabsel_right': s:clr('fg', 'bg', 'bold'),
+        \ 'airline_tabsel_right': s:clr('fg', 'bg', ),
         \ 'airline_tabmod_right': s:clr('green', 'bg'),
         \}
 endif
