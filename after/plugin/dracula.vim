@@ -36,7 +36,7 @@ endif
 " ALE: {{{
 if exists('g:ale_enabled')
   hi! link ALEError DraculaErrorLine
-  hi! link ALEWarning DraculaWarningLine
+  hi! link ALEWarning DraculaWarnLine
   hi! link ALEInfo DraculaInfoLine
 
   hi! link ALEErrorSign DraculaError
