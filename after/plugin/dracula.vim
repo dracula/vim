@@ -39,9 +39,9 @@ if exists('g:ale_enabled')
   hi! link ALEWarning DraculaWarnLine
   hi! link ALEInfo DraculaInfoLine
 
-  hi! link ALEErrorSign DraculaError
-  hi! link ALEWarningSign DraculaWarning
-  hi! link ALEInfoSign DraculaInfo
+  hi! link ALEErrorSign DraculaRed
+  hi! link ALEWarningSign DraculaOrange
+  hi! link ALEInfoSign DraculaCyan
 endif
 " }}}
 
