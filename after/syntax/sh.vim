@@ -3,3 +3,4 @@ if dracula#should_abort('bash', 'ksh', 'posix', 'sh')
 endif
 
 hi! link shCommandSub NONE
+hi! link shEscape     DraculaRed

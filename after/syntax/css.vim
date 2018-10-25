@@ -9,6 +9,7 @@ hi! link cssBraces            Delimiter
 hi! link cssFunctionComma     Delimiter
 hi! link cssNoise             DraculaPink
 hi! link cssProp              DraculaCyan
+hi! link cssPseudoClass       DraculaPink
 hi! link cssPseudoClassId     DraculaGreenItalic
 hi! link cssUnitDecorators    DraculaPink
 hi! link cssVendor            DraculaGreenItalic
