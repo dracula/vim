@@ -3,7 +3,7 @@ if dracula#should_abort('markdown', 'mkd')
 endif
 
 if b:current_syntax ==# 'mkd'
-  " plasticboy/vim-markdown {{{1
+" plasticboy/vim-markdown {{{1
   hi! link htmlBold       DraculaOrangeBold
   hi! link htmlBoldItalic DraculaOrangeBoldItalic
   hi! link htmlH1         DraculaPurpleBold
@@ -14,15 +14,16 @@ if b:current_syntax ==# 'mkd'
   hi! link mkdCode        DraculaGreen
   hi! link mkdCodeEnd     DraculaGreen
   hi! link mkdCodeStart   DraculaGreen
+  hi! link mkdHeading     DraculaPurpleBold
   hi! link mkdInlineUrl   DraculaLink
   hi! link mkdItalic      DraculaYellowItalic
   hi! link mkdLink        DraculaPink
   hi! link mkdListItem    DraculaCyan
   hi! link mkdRule        DraculaComment
   hi! link mkdUrl         DraculaLink
-  "}}}1
+"}}}1
 elseif b:current_syntax ==# 'markdown'
-  " Builtin: {{{1
+" Builtin: {{{1
   hi! link markdownBlockquote        DraculaCyan
   hi! link markdownBold              DraculaOrangeBold
   hi! link markdownBoldItalic        DraculaOrangeBoldItalic
@@ -43,7 +44,7 @@ elseif b:current_syntax ==# 'markdown'
   hi! link markdownOrderedListMarker DraculaCyan
   hi! link markdownRule              DraculaComment
   hi! link markdownUrl               DraculaLink
-  "}}}
+"}}}
 endif
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
