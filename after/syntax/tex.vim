@@ -15,4 +15,3 @@ hi! link texRefZone       DraculaBgDarker
 hi! link texSpecialChar   DraculaPurple
 hi! link texSubscripts    DraculaPurple
 hi! link texTitle         DraculaFgBold
-hi! link texTypeStyle     DraculaSubtle
