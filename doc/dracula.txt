@@ -77,10 +77,6 @@ Include inverse attributes in highlighting >
 Include background fill colors >
    let g:dracula_colorterm = 1
 
-* *g:dracula_cursorline*
-Include cursor line highlighting (otherwise just highlight line number) >
-   let g:dracula_colorterm = 1
-
 ==============================================================================
 CUSTOMIZATION                                            *dracula-customization*
 

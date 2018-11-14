@@ -119,10 +119,6 @@ if !exists('g:dracula_colorterm')
   let g:dracula_colorterm = 1
 endif
 
-if !exists('g:dracula_cursorline')
-  let g:dracula_cursorline = 1
-endif
-
 "}}}2
 " Script Helpers: {{{2
 
@@ -241,12 +237,7 @@ call s:h('Normal', s:fg, s:Background())
 call s:h('StatusLine', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
-
-if g:dracula_cursorline
-  call s:h('CursorLine', s:none, s:subtle)
-else
-  hi clear CursorLine
-endif
+call s:h('CursorLine', s:none, s:subtle)
 
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn DraculaBgDark
