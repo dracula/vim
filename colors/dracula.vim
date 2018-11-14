@@ -276,7 +276,7 @@ hi! link WarningMsg   DraculaOrangeInverse
 " Syntax: {{{
 
 " Required as some plugins will overwrite
-call s:h('MatchParen', s:fg, s:pink, [s:attrs.underline])
+call s:h('MatchParen', s:green, s:none, [s:attrs.underline])
 call s:h('Conceal', s:comment, s:bglight)
 
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
