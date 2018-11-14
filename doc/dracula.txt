@@ -56,25 +56,29 @@ In the following section, `1` signifies `on` and `0` signifies `off`.
 * *g:dracula_bold*
 Include bold attributes in highlighting >
     let g:dracula_bold = 1
-<
+
 * *g:dracula_italic*
 Include italic attributes in highlighting >
     let g:dracula_italic = 1
-<
+
 * *g:dracula_underline*
 Include underline attributes in highlighting >
     let g:dracula_underline = 1
-<
+
 * *g:dracula_undercurl*
 Include undercurl attributes in highlighting (only if underline enabled) >
     let g:dracula_undercurl = 1
-<
+
 * *g:dracula_inverse*
 Include inverse attributes in highlighting >
     let g:dracula_inverse = 1
 
 * *g:dracula_colorterm*
 Include background fill colors >
+   let g:dracula_colorterm = 1
+
+* *g:dracula_cursorline*
+Include cursor line highlighting (otherwise just highlight line number) >
    let g:dracula_colorterm = 1
 
 ==============================================================================
@@ -131,9 +135,8 @@ Further information available at
 https://draculatheme.com/vim
 
 Maintained by:
-- Trevor Heins ( https://github.com/heinst )
-- Blake Williams ( https://github.com/BlakeWilliams )
-- Derek S. ( https://github.com/dsifford )
+- Derek S. (https://github.com/dsifford)
+- D. Ben Knoble (https://github.com/benknoble)
 
 Git repository:
 https://github.com/dracula/vim
