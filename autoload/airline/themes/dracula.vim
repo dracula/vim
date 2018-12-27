@@ -46,7 +46,7 @@ let g:airline#themes#dracula#palette = {
 \   'normal': s:color_map(
 \       ['bg', 'purple'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -55,12 +55,12 @@ let g:airline#themes#dracula#palette = {
 \   'normal_modified': s:color_map(
 \       ['bg', 'purple'],
 \       ['fg', 'comment'],
-\       ['fg', 'bgdark'],
+\       ['fg', 'bg'],
 \     ),
 \   'insert': s:color_map(
 \       ['bg', 'green'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -69,12 +69,12 @@ let g:airline#themes#dracula#palette = {
 \   'insert_modified': s:color_map(
 \       ['bg', 'green'],
 \       ['fg', 'comment'],
-\       ['fg', 'bgdark'],
+\       ['fg', 'bg'],
 \     ),
 \   'replace': s:color_map(
 \       ['bg', 'orange'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -83,12 +83,12 @@ let g:airline#themes#dracula#palette = {
 \   'replace_modified': s:color_map(
 \       ['bg', 'orange'],
 \       ['fg', 'comment'],
-\       ['fg', 'bgdark'],
+\       ['fg', 'bg'],
 \     ),
 \   'visual': s:color_map(
 \       ['bg', 'yellow'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -97,12 +97,12 @@ let g:airline#themes#dracula#palette = {
 \   'visual_modified': s:color_map(
 \       ['bg', 'yellow'],
 \       ['fg', 'comment'],
-\       ['fg', 'bgdark'],
+\       ['fg', 'bg'],
 \     ),
 \   'inactive': s:color_map(
 \       ['fg', 'selection'],
 \       ['fg', 'selection'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \     ),
 \}
 

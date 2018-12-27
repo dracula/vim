@@ -305,7 +305,7 @@ hi! link Number Constant
 hi! link Boolean Constant
 hi! link Float Constant
 
-hi! link Identifier DraculaFg
+hi! link Identifier DraculaOrange
 hi! link Function DraculaGreen
 
 hi! link Statement DraculaPink
@@ -316,7 +316,7 @@ hi! link Operator DraculaPink
 hi! link Keyword DraculaPink
 hi! link Exception DraculaPink
 
-hi! link PreProc DraculaPink
+hi! link PreProc DraculaGreen
 hi! link Include DraculaPink
 hi! link Define DraculaPink
 hi! link Macro DraculaPink
