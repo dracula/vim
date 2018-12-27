@@ -46,7 +46,7 @@ let g:airline#themes#dracula#palette = {
 \   'normal': s:color_map(
 \       ['bg', 'purple'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -64,7 +64,7 @@ let g:airline#themes#dracula#palette = {
 \   'insert': s:color_map(
 \       ['bg', 'green'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -82,7 +82,7 @@ let g:airline#themes#dracula#palette = {
 \   'replace': s:color_map(
 \       ['bg', 'orange'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
@@ -100,7 +100,7 @@ let g:airline#themes#dracula#palette = {
 \   'visual': s:color_map(
 \       ['bg', 'yellow'],
 \       ['fg', 'comment'],
-\       ['fg', 'selection'],
+\       ['fg', 'bg'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
 \         'airline_error': s:clr('bg', 'red'),
