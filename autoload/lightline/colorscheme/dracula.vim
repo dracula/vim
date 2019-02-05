@@ -1,5 +1,5 @@
 " =============================================================================
-" Filename: autoload/lightline/colorscheme/Dracula.vim
+" Filename: autoload/lightline/colorscheme/dracula.vim
 " Author: adamalbrecht
 " License: MIT License
 " Last Change: 2018/04/11
@@ -35,7 +35,7 @@ if exists('g:lightline')
   let s:p.normal.error = [ [ s:red, s:black ] ]
   let s:p.normal.warning = [ [ s:yellow, s:black ] ]
 
-  let g:lightline#colorscheme#Dracula#palette = lightline#colorscheme#flatten(s:p)
+  let g:lightline#colorscheme#dracula#palette = lightline#colorscheme#flatten(s:p)
 
 endif
 
