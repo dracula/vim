@@ -20,19 +20,6 @@ if exists('g:loaded_fzf') && ! exists('g:fzf_colors')
         \ 'header':  ['fg', 'Comment'] }
 endif
 "}}}
-" GitGutter: {{{
-
-" FIXME: This can be removed once airblade/vim-gitgutter#520 closes
-" see: https://github.com/airblade/vim-gitgutter/issues/520#issuecomment-389931281
-if exists('g:gitgutter_enabled')
-  hi! link GitGutterAdd DraculaGreen
-  hi! link GitGutterChange DraculaYellow
-  hi! link GitGutterChangeDelete DraculaOrange
-  hi! link GitGutterDelete DraculaRed
-endif
-
-"}}}
-
 " ALE: {{{
 if exists('g:ale_enabled')
   hi! link ALEError DraculaErrorLine

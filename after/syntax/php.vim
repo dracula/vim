@@ -3,6 +3,7 @@ if dracula#should_abort('php')
 endif
 
 hi! link phpClass           Type
+hi! link phpClasses         Type
 hi! link phpDocTags         DraculaCyanItalic
 hi! link phpFunction        Function
 hi! link phpParent          Normal
