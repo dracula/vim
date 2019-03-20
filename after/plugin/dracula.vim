@@ -31,5 +31,11 @@ if exists('g:ale_enabled')
   hi! link ALEInfoSign DraculaCyan
 endif
 " }}}
+" CtrlP: {{{
+if exists('g:loaded_ctrlp')
+  hi! link CtrlPMatch IncSearch
+  hi! link CtrlPBufferHid Normal
+endif
+" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2:
