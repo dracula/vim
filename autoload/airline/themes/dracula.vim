@@ -124,6 +124,14 @@ let g:airline#themes#dracula#palette = {
 \         'airline_error': s:clr('bg', 'red'),
 \       },
 \     ),
+\   'terminal': s:color_map(
+\       ['bg', 'purple'],
+\       ['fg', 'comment'],
+\       ['fg', 'selection'],
+\       {
+\         'airline_term': s:clr('fg', 'selection'),
+\       },
+\     ),
 \}
 
 " Extensions: {{{
