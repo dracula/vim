@@ -3,7 +3,7 @@ if dracula#should_abort('typescript')
 endif
 
 hi! link typescriptAliasDeclaration       Type
-hi! link typescriptArrayMethod            DraculaCyan
+hi! link typescriptArrayMethod            Function
 hi! link typescriptArrowFunc              Operator
 hi! link typescriptArrowFuncArg           DraculaOrangeItalic
 hi! link typescriptAssign                 Operator
@@ -27,7 +27,7 @@ hi! link typescriptFuncTypeArrow          Operator
 hi! link typescriptGlobal                 Type
 hi! link typescriptGlobalMethod           DraculaCyan
 hi! link typescriptGlobalObjects          Type
-hi! link typescriptIdentifier             Keyword
+hi! link typescriptIdentifier             DraculaPurpleItalic
 hi! link typescriptInterfaceHeritage      Type
 hi! link typescriptInterfaceName          Type
 hi! link typescriptInterpolationDelimiter Keyword
@@ -44,6 +44,7 @@ hi! link typescriptPredefinedType         Type
 hi! link typescriptTernaryOp              Operator
 hi! link typescriptTypeAnnotation         Special
 hi! link typescriptTypeCast               Operator
+hi! link typescriptTypeReference          Type
 hi! link typescriptTypeParameter          DraculaOrangeItalic
 hi! link typescriptUnaryOp                Operator
 hi! link typescriptVariable               Keyword
