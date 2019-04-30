@@ -2,13 +2,13 @@ if dracula#should_abort('vim')
     finish
 endif
 
-hi! link vimAutoCmdSfxList     DraculaCyanItalic
-hi! link vimAutoEventList      DraculaCyanItalic
-hi! link vimEnvVar             DraculaPurple
-hi! link vimFunction           DraculaGreen
-hi! link vimHiBang             DraculaPink
-hi! link vimOption             DraculaCyanItalic
-hi! link vimSetMod             DraculaPink
+hi! link vimAutoCmdSfxList     Type
+hi! link vimAutoEventList      Type
+hi! link vimEnvVar             Constant
+hi! link vimFunction           Function
+hi! link vimHiBang             Keyword
+hi! link vimOption             Type
+hi! link vimSetMod             Keyword
 hi! link vimSetSep             Delimiter
-hi! link vimUserAttrbCmpltFunc DraculaGreen
-hi! link vimUserFunc           DraculaGreen
+hi! link vimUserAttrbCmpltFunc Function
+hi! link vimUserFunc           Function

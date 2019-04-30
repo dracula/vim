@@ -22,13 +22,16 @@ endif
 "}}}
 " ALE: {{{
 if exists('g:ale_enabled')
-  hi! link ALEError DraculaErrorLine
-  hi! link ALEWarning DraculaWarnLine
-  hi! link ALEInfo DraculaInfoLine
+  hi! link ALEError              DraculaErrorLine
+  hi! link ALEWarning            DraculaWarnLine
+  hi! link ALEInfo               DraculaInfoLine
 
-  hi! link ALEErrorSign DraculaRed
-  hi! link ALEWarningSign DraculaOrange
-  hi! link ALEInfoSign DraculaCyan
+  hi! link ALEErrorSign          DraculaRed
+  hi! link ALEWarningSign        DraculaOrange
+  hi! link ALEInfoSign           DraculaCyan
+
+  hi! link ALEVirtualTextError   Comment
+  hi! link ALEVirtualTextWarning Comment
 endif
 " }}}
 " CtrlP: {{{

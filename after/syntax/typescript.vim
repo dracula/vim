@@ -23,6 +23,7 @@ hi! link typescriptEnum                   Type
 hi! link typescriptEnumKeyword            Keyword
 hi! link typescriptFuncComma              Delimiter
 hi! link typescriptFuncKeyword            Keyword
+hi! link typescriptFuncType               DraculaOrangeItalic
 hi! link typescriptFuncTypeArrow          Operator
 hi! link typescriptGlobal                 Type
 hi! link typescriptGlobalMethod           DraculaCyan
@@ -39,6 +40,7 @@ hi! link typescriptObjectColon            Special
 hi! link typescriptObjectLabel            Identifier
 hi! link typescriptObjectSpread           Operator
 hi! link typescriptOperator               Operator
+hi! link typescriptParamImpl              DraculaOrangeItalic
 hi! link typescriptParens                 Delimiter
 hi! link typescriptPredefinedType         Type
 hi! link typescriptTernaryOp              Operator
