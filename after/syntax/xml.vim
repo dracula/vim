@@ -2,10 +2,10 @@ if dracula#should_abort('xml')
     finish
 endif
 
-hi! link xmlAttrib  DraculaGreenItalic
-hi! link xmlEqual   Operator
-hi! link xmlTag     Delimiter
-hi! link xmlTagName Statement
+hi! def link xmlAttrib  DraculaGreenItalic
+hi! def link xmlEqual   Operator
+hi! def link xmlTag     Delimiter
+hi! def link xmlTagName Statement
 
 " Fixes missing highlight over end tags
 syn region xmlTagName

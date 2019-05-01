@@ -4,7 +4,7 @@ endif
 
 runtime! syntax/typescript.vim
 
-hi! link tsxAttrib           DraculaGreenItalic
-hi! link tsxEqual            Operator
-hi! link tsxIntrinsicTagName Keyword
-hi! link tsxTagName          Type
+hi! def link tsxAttrib           DraculaGreenItalic
+hi! def link tsxEqual            Operator
+hi! def link tsxIntrinsicTagName Keyword
+hi! def link tsxTagName          Type

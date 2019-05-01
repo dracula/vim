@@ -2,14 +2,14 @@ if dracula#should_abort('css')
     finish
 endif
 
-hi! link cssAttrComma         Delimiter
-hi! link cssAttrRegion        DraculaPink
-hi! link cssAttributeSelector DraculaGreenItalic
-hi! link cssBraces            Delimiter
-hi! link cssFunctionComma     Delimiter
-hi! link cssNoise             DraculaPink
-hi! link cssProp              DraculaCyan
-hi! link cssPseudoClass       DraculaPink
-hi! link cssPseudoClassId     DraculaGreenItalic
-hi! link cssUnitDecorators    DraculaPink
-hi! link cssVendor            DraculaGreenItalic
+hi! def link cssAttrComma         Delimiter
+hi! def link cssAttrRegion        DraculaPink
+hi! def link cssAttributeSelector DraculaGreenItalic
+hi! def link cssBraces            Delimiter
+hi! def link cssFunctionComma     Delimiter
+hi! def link cssNoise             DraculaPink
+hi! def link cssProp              DraculaCyan
+hi! def link cssPseudoClass       DraculaPink
+hi! def link cssPseudoClassId     DraculaGreenItalic
+hi! def link cssUnitDecorators    DraculaPink
+hi! def link cssVendor            DraculaGreenItalic

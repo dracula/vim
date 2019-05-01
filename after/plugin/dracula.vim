@@ -22,22 +22,22 @@ endif
 "}}}
 " ALE: {{{
 if exists('g:ale_enabled')
-  hi! link ALEError              DraculaErrorLine
-  hi! link ALEWarning            DraculaWarnLine
-  hi! link ALEInfo               DraculaInfoLine
+  hi! def link ALEError              DraculaErrorLine
+  hi! def link ALEWarning            DraculaWarnLine
+  hi! def link ALEInfo               DraculaInfoLine
 
-  hi! link ALEErrorSign          DraculaRed
-  hi! link ALEWarningSign        DraculaOrange
-  hi! link ALEInfoSign           DraculaCyan
+  hi! def link ALEErrorSign          DraculaRed
+  hi! def link ALEWarningSign        DraculaOrange
+  hi! def link ALEInfoSign           DraculaCyan
 
-  hi! link ALEVirtualTextError   Comment
-  hi! link ALEVirtualTextWarning Comment
+  hi! def link ALEVirtualTextError   Comment
+  hi! def link ALEVirtualTextWarning Comment
 endif
 " }}}
 " CtrlP: {{{
 if exists('g:loaded_ctrlp')
-  hi! link CtrlPMatch IncSearch
-  hi! link CtrlPBufferHid Normal
+  hi! def link CtrlPMatch IncSearch
+  hi! def link CtrlPBufferHid Normal
 endif
 " }}}
 

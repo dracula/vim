@@ -2,51 +2,51 @@ if dracula#should_abort('typescript')
     finish
 endif
 
-hi! link typescriptAliasDeclaration       Type
-hi! link typescriptArrayMethod            Function
-hi! link typescriptArrowFunc              Operator
-hi! link typescriptArrowFuncArg           DraculaOrangeItalic
-hi! link typescriptAssign                 Operator
-hi! link typescriptBOMWindowProp          Constant
-hi! link typescriptBinaryOp               Operator
-hi! link typescriptBraces                 Delimiter
-hi! link typescriptCall                   typescriptArrowFuncArg
-hi! link typescriptClassHeritage          Type
-hi! link typescriptClassName              Type
-hi! link typescriptDateMethod             DraculaCyan
-hi! link typescriptDateStaticMethod       Function
-hi! link typescriptDecorator              DraculaGreenItalic
-hi! link typescriptDefaultParam           Operator
-hi! link typescriptES6SetMethod           DraculaCyan
-hi! link typescriptEndColons              Delimiter
-hi! link typescriptEnum                   Type
-hi! link typescriptEnumKeyword            Keyword
-hi! link typescriptFuncComma              Delimiter
-hi! link typescriptFuncKeyword            Keyword
-hi! link typescriptFuncType               DraculaOrangeItalic
-hi! link typescriptFuncTypeArrow          Operator
-hi! link typescriptGlobal                 Type
-hi! link typescriptGlobalMethod           DraculaCyan
-hi! link typescriptGlobalObjects          Type
-hi! link typescriptIdentifier             DraculaPurpleItalic
-hi! link typescriptInterfaceHeritage      Type
-hi! link typescriptInterfaceName          Type
-hi! link typescriptInterpolationDelimiter Keyword
-hi! link typescriptKeywordOp              Keyword
-hi! link typescriptLogicSymbols           Operator
-hi! link typescriptMember                 Identifier
-hi! link typescriptMemberOptionality      Special
-hi! link typescriptObjectColon            Special
-hi! link typescriptObjectLabel            Identifier
-hi! link typescriptObjectSpread           Operator
-hi! link typescriptOperator               Operator
-hi! link typescriptParamImpl              DraculaOrangeItalic
-hi! link typescriptParens                 Delimiter
-hi! link typescriptPredefinedType         Type
-hi! link typescriptTernaryOp              Operator
-hi! link typescriptTypeAnnotation         Special
-hi! link typescriptTypeCast               Operator
-hi! link typescriptTypeReference          Type
-hi! link typescriptTypeParameter          DraculaOrangeItalic
-hi! link typescriptUnaryOp                Operator
-hi! link typescriptVariable               Keyword
+hi! def link typescriptAliasDeclaration       Type
+hi! def link typescriptArrayMethod            Function
+hi! def link typescriptArrowFunc              Operator
+hi! def link typescriptArrowFuncArg           DraculaOrangeItalic
+hi! def link typescriptAssign                 Operator
+hi! def link typescriptBOMWindowProp          Constant
+hi! def link typescriptBinaryOp               Operator
+hi! def link typescriptBraces                 Delimiter
+hi! def link typescriptCall                   typescriptArrowFuncArg
+hi! def link typescriptClassHeritage          Type
+hi! def link typescriptClassName              Type
+hi! def link typescriptDateMethod             DraculaCyan
+hi! def link typescriptDateStaticMethod       Function
+hi! def link typescriptDecorator              DraculaGreenItalic
+hi! def link typescriptDefaultParam           Operator
+hi! def link typescriptES6SetMethod           DraculaCyan
+hi! def link typescriptEndColons              Delimiter
+hi! def link typescriptEnum                   Type
+hi! def link typescriptEnumKeyword            Keyword
+hi! def link typescriptFuncComma              Delimiter
+hi! def link typescriptFuncKeyword            Keyword
+hi! def link typescriptFuncType               DraculaOrangeItalic
+hi! def link typescriptFuncTypeArrow          Operator
+hi! def link typescriptGlobal                 Type
+hi! def link typescriptGlobalMethod           DraculaCyan
+hi! def link typescriptGlobalObjects          Type
+hi! def link typescriptIdentifier             DraculaPurpleItalic
+hi! def link typescriptInterfaceHeritage      Type
+hi! def link typescriptInterfaceName          Type
+hi! def link typescriptInterpolationDelimiter Keyword
+hi! def link typescriptKeywordOp              Keyword
+hi! def link typescriptLogicSymbols           Operator
+hi! def link typescriptMember                 Identifier
+hi! def link typescriptMemberOptionality      Special
+hi! def link typescriptObjectColon            Special
+hi! def link typescriptObjectLabel            Identifier
+hi! def link typescriptObjectSpread           Operator
+hi! def link typescriptOperator               Operator
+hi! def link typescriptParamImpl              DraculaOrangeItalic
+hi! def link typescriptParens                 Delimiter
+hi! def link typescriptPredefinedType         Type
+hi! def link typescriptTernaryOp              Operator
+hi! def link typescriptTypeAnnotation         Special
+hi! def link typescriptTypeCast               Operator
+hi! def link typescriptTypeReference          Type
+hi! def link typescriptTypeParameter          DraculaOrangeItalic
+hi! def link typescriptUnaryOp                Operator
+hi! def link typescriptVariable               Keyword

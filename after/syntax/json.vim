@@ -2,5 +2,5 @@ if dracula#should_abort('json')
     finish
 endif
 
-hi! link jsonKeyword      DraculaCyan
-hi! link jsonKeywordMatch DraculaPink
+hi! def link jsonKeyword      DraculaCyan
+hi! def link jsonKeywordMatch DraculaPink

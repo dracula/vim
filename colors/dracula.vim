@@ -250,38 +250,38 @@ call s:h('StatusLineTermNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
 call s:h('CursorLine', s:none, s:subtle)
 
-hi! link ColorColumn  DraculaBgDark
-hi! link CursorColumn DraculaBgDark
-hi! link CursorLineNr DraculaYellow
-hi! link DiffAdd      DraculaGreen
-hi! link DiffAdded    DiffAdd
-hi! link DiffChange   DraculaDiffChange
-hi! link DiffDelete   DraculaDiffDelete
-hi! link DiffRemoved  DiffDelete
-hi! link DiffText     DraculaDiffText
-hi! link Directory    DraculaPurpleBold
-hi! link ErrorMsg     DraculaRedInverse
-hi! link FoldColumn   DraculaSubtle
-hi! link Folded       DraculaBoundary
-hi! link IncSearch    DraculaOrangeInverse
-hi! link LineNr       DraculaComment
-hi! link MoreMsg      DraculaFgBold
-hi! link NonText      DraculaSubtle
-hi! link Pmenu        DraculaBgDark
-hi! link PmenuSbar    DraculaBgDark
-hi! link PmenuSel     DraculaSelection
-hi! link PmenuThumb   DraculaSelection
-hi! link Question     DraculaFgBold
-hi! link Search       DraculaSearch
-hi! link SignColumn   DraculaComment
-hi! link TabLine      DraculaBoundary
-hi! link TabLineFill  DraculaBgDarker
-hi! link TabLineSel   Normal
-hi! link Title        DraculaGreenBold
-hi! link VertSplit    DraculaBoundary
-hi! link Visual       DraculaSelection
-hi! link VisualNOS    Visual
-hi! link WarningMsg   DraculaOrangeInverse
+hi! def link ColorColumn  DraculaBgDark
+hi! def link CursorColumn DraculaBgDark
+hi! def link CursorLineNr DraculaYellow
+hi! def link DiffAdd      DraculaGreen
+hi! def link DiffAdded    DiffAdd
+hi! def link DiffChange   DraculaDiffChange
+hi! def link DiffDelete   DraculaDiffDelete
+hi! def link DiffRemoved  DiffDelete
+hi! def link DiffText     DraculaDiffText
+hi! def link Directory    DraculaPurpleBold
+hi! def link ErrorMsg     DraculaRedInverse
+hi! def link FoldColumn   DraculaSubtle
+hi! def link Folded       DraculaBoundary
+hi! def link IncSearch    DraculaOrangeInverse
+hi! def link LineNr       DraculaComment
+hi! def link MoreMsg      DraculaFgBold
+hi! def link NonText      DraculaSubtle
+hi! def link Pmenu        DraculaBgDark
+hi! def link PmenuSbar    DraculaBgDark
+hi! def link PmenuSel     DraculaSelection
+hi! def link PmenuThumb   DraculaSelection
+hi! def link Question     DraculaFgBold
+hi! def link Search       DraculaSearch
+hi! def link SignColumn   DraculaComment
+hi! def link TabLine      DraculaBoundary
+hi! def link TabLineFill  DraculaBgDarker
+hi! def link TabLineSel   Normal
+hi! def link Title        DraculaGreenBold
+hi! def link VertSplit    DraculaBoundary
+hi! def link Visual       DraculaSelection
+hi! def link VisualNOS    Visual
+hi! def link WarningMsg   DraculaOrangeInverse
 
 " }}}
 " Syntax: {{{
@@ -292,59 +292,59 @@ call s:h('Conceal', s:comment, s:bglight)
 
 " Neovim uses SpecialKey for escape characters only. Vim uses it for that, plus whitespace.
 if has('nvim')
-  hi! link SpecialKey DraculaRed
+  hi! def link SpecialKey DraculaRed
 else
-  hi! link SpecialKey DraculaSubtle
+  hi! def link SpecialKey DraculaSubtle
 endif
 
-hi! link Comment DraculaComment
-hi! link Underlined DraculaFgUnderline
-hi! link Todo DraculaTodo
+hi! def link Comment DraculaComment
+hi! def link Underlined DraculaFgUnderline
+hi! def link Todo DraculaTodo
 
-hi! link Error DraculaError
-hi! link SpellBad DraculaErrorLine
-hi! link SpellLocal DraculaWarnLine
-hi! link SpellCap DraculaInfoLine
-hi! link SpellRare DraculaInfoLine
+hi! def link Error DraculaError
+hi! def link SpellBad DraculaErrorLine
+hi! def link SpellLocal DraculaWarnLine
+hi! def link SpellCap DraculaInfoLine
+hi! def link SpellRare DraculaInfoLine
 
-hi! link Constant DraculaPurple
-hi! link String DraculaYellow
-hi! link Character DraculaPink
-hi! link Number Constant
-hi! link Boolean Constant
-hi! link Float Constant
+hi! def link Constant DraculaPurple
+hi! def link String DraculaYellow
+hi! def link Character DraculaPink
+hi! def link Number Constant
+hi! def link Boolean Constant
+hi! def link Float Constant
 
-hi! link Identifier DraculaFg
-hi! link Function DraculaGreen
+hi! def link Identifier DraculaFg
+hi! def link Function DraculaGreen
 
-hi! link Statement DraculaPink
-hi! link Conditional DraculaPink
-hi! link Repeat DraculaPink
-hi! link Label DraculaPink
-hi! link Operator DraculaPink
-hi! link Keyword DraculaPink
-hi! link Exception DraculaPink
+hi! def link Statement DraculaPink
+hi! def link Conditional DraculaPink
+hi! def link Repeat DraculaPink
+hi! def link Label DraculaPink
+hi! def link Operator DraculaPink
+hi! def link Keyword DraculaPink
+hi! def link Exception DraculaPink
 
-hi! link PreProc DraculaPink
-hi! link Include DraculaPink
-hi! link Define DraculaPink
-hi! link Macro DraculaPink
-hi! link PreCondit DraculaPink
-hi! link StorageClass DraculaPink
-hi! link Structure DraculaPink
-hi! link Typedef DraculaPink
+hi! def link PreProc DraculaPink
+hi! def link Include DraculaPink
+hi! def link Define DraculaPink
+hi! def link Macro DraculaPink
+hi! def link PreCondit DraculaPink
+hi! def link StorageClass DraculaPink
+hi! def link Structure DraculaPink
+hi! def link Typedef DraculaPink
 
-hi! link Type DraculaCyanItalic
+hi! def link Type DraculaCyanItalic
 
-hi! link Delimiter DraculaFg
+hi! def link Delimiter DraculaFg
 
-hi! link Special DraculaPink
-hi! link SpecialComment DraculaCyanItalic
-hi! link Tag DraculaCyan
-hi! link helpHyperTextJump DraculaLink
-hi! link helpCommand DraculaPurple
-hi! link helpExample DraculaGreen
-hi! link helpBacktick Special
+hi! def link Special DraculaPink
+hi! def link SpecialComment DraculaCyanItalic
+hi! def link Tag DraculaCyan
+hi! def link helpHyperTextJump DraculaLink
+hi! def link helpCommand DraculaPurple
+hi! def link helpExample DraculaGreen
+hi! def link helpBacktick Special
 
 "}}}
 

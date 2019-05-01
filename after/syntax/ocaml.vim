@@ -2,6 +2,6 @@ if dracula#should_abort('ocaml')
     finish
 endif
 
-hi! link ocamlModule  Type
-hi! link ocamlModPath Normal
-hi! link ocamlLabel   DraculaOrangeItalic
+hi! def link ocamlModule  Type
+hi! def link ocamlModPath Normal
+hi! def link ocamlLabel   DraculaOrangeItalic

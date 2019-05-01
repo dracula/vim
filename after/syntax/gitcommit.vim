@@ -3,10 +3,10 @@ if dracula#should_abort('gitcommit')
 endif
 
 " The following two are misnomers. Colors are correct.
-hi! link diffFile    DraculaGreen
-hi! link diffNewFile DraculaRed
+hi! def link diffFile    DraculaGreen
+hi! def link diffNewFile DraculaRed
 
-hi! link diffAdded   DraculaGreen
-hi! link diffLine    DraculaCyanItalic
-hi! link diffRemoved DraculaRed
+hi! def link diffAdded   DraculaGreen
+hi! def link diffLine    DraculaCyanItalic
+hi! def link diffRemoved DraculaRed
 

@@ -2,9 +2,9 @@ if dracula#should_abort('python')
     finish
 endif
 
-hi! link pythonBuiltinObj    Type
-hi! link pythonBuiltinObject Type
-hi! link pythonBuiltinType   Type
-hi! link pythonExClass       Type
-hi! link pythonNone          Type
-hi! link pythonRun           Comment
+hi! def link pythonBuiltinObj    Type
+hi! def link pythonBuiltinObject Type
+hi! def link pythonBuiltinType   Type
+hi! def link pythonExClass       Type
+hi! def link pythonNone          Type
+hi! def link pythonRun           Comment
