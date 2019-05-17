@@ -31,7 +31,7 @@ endif
 
 " Palette: {{{2
 
-let s:fg        = ['#F8F8F2', 255]
+let s:fg        = ['#F8F8F2', 253]
 
 let s:bglighter = ['#424450', 238]
 let s:bglight   = ['#343746', 237]
