@@ -43,6 +43,7 @@ hi! link typescriptOperator               Operator
 hi! link typescriptParamImpl              DraculaOrangeItalic
 hi! link typescriptParens                 Delimiter
 hi! link typescriptPredefinedType         Type
+hi! link typescriptRestOrSpread           Operator
 hi! link typescriptTernaryOp              Operator
 hi! link typescriptTypeAnnotation         Special
 hi! link typescriptTypeCast               Operator
