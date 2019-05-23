@@ -22,4 +22,4 @@ hi! link jsTemplateBraces          Special
 
 "}}}
 
-" vim: set fdm=marker fdl=0:
+" vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
