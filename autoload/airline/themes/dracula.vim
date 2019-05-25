@@ -14,14 +14,10 @@
 " more attr-list items as input, transforms it to the format accepted by
 " airline#themes#generate_color_map and returns that value
 func! s:clr(fg, bg, ...)
-  let l:fg = get(g:dracula_palette, a:fg)
-  let l:bg = get(g:dracula_palette, a:bg)
-  if ! type(l:fg) == 3
-    echoerr 'Color undefined in dracula_palette: ' . a:fg
-  elseif ! type(l:bg) == 3
-    echoerr 'Color undefined in dracula_palette: ' . a:fg
-  endif
-  return [ l:fg[0], l:bg[0], l:fg[1], l:bg[1] ] + filter(copy(a:000), 'type(v:val) == 1 && len(v:val) > 0')
+  let l:fg = g:dracula#palette[a:fg]
+  let l:bg = g:dracula#palette[a:bg]
+  return [ l:fg[0], l:bg[0], l:fg[1], l:bg[1] ] +
+       \ filter(copy(a:000), {_, val -> type(val) == 1 && len(val) > 0 })
 endfunc
 
 " Takes three ['fg', 'bg'] color lists and optionally a dictionary of extra
@@ -161,4 +157,4 @@ endif
 "}}}2
 "}}}
 
-" vim: fdm=marker ts=2 sts=2 sw=2:
+" vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:

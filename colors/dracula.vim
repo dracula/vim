@@ -31,74 +31,39 @@ endif
 
 " Palette: {{{2
 
-let s:fg        = ['#F8F8F2', 253]
+let s:fg        = g:dracula#palette.fg
 
-let s:bglighter = ['#424450', 238]
-let s:bglight   = ['#343746', 237]
-let s:bg        = ['#282A36', 236]
-let s:bgdark    = ['#21222C', 235]
-let s:bgdarker  = ['#191A21', 234]
+let s:bglighter = g:dracula#palette.bglighter
+let s:bglight   = g:dracula#palette.bglight
+let s:bg        = g:dracula#palette.bg
+let s:bgdark    = g:dracula#palette.bgdark
+let s:bgdarker  = g:dracula#palette.bgdarker
 
-let s:subtle    = ['#424450', 238]
+let s:comment   = g:dracula#palette.comment
+let s:selection = g:dracula#palette.selection
+let s:subtle    = g:dracula#palette.subtle
 
-let s:selection = ['#44475A', 239]
-let s:comment   = ['#6272A4',  61]
-let s:cyan      = ['#8BE9FD', 117]
-let s:green     = ['#50FA7B',  84]
-let s:orange    = ['#FFB86C', 215]
-let s:pink      = ['#FF79C6', 212]
-let s:purple    = ['#BD93F9', 141]
-let s:red       = ['#FF5555', 203]
-let s:yellow    = ['#F1FA8C', 228]
+let s:cyan      = g:dracula#palette.cyan
+let s:green     = g:dracula#palette.green
+let s:orange    = g:dracula#palette.orange
+let s:pink      = g:dracula#palette.pink
+let s:purple    = g:dracula#palette.purple
+let s:red       = g:dracula#palette.red
+let s:yellow    = g:dracula#palette.yellow
 
 let s:none      = ['NONE', 'NONE']
 
-let g:dracula_palette = {
-      \ 'fg': s:fg,
-      \ 'bg': s:bg,
-      \ 'selection': s:selection,
-      \ 'comment': s:comment,
-      \ 'cyan': s:cyan,
-      \ 'green': s:green,
-      \ 'orange': s:orange,
-      \ 'pink': s:pink,
-      \ 'purple': s:purple,
-      \ 'red': s:red,
-      \ 'yellow': s:yellow,
-      \
-      \ 'bglighter': s:bglighter,
-      \ 'bglight': s:bglight,
-      \ 'bgdark': s:bgdark,
-      \ 'bgdarker': s:bgdarker,
-      \ 'subtle': s:subtle,
-      \}
-
 if has('nvim')
-  let g:terminal_color_0  = '#21222C'
-  let g:terminal_color_1  = '#FF5555'
-  let g:terminal_color_2  = '#50FA7B'
-  let g:terminal_color_3  = '#F1FA8C'
-  let g:terminal_color_4  = '#BD93F9'
-  let g:terminal_color_5  = '#FF79C6'
-  let g:terminal_color_6  = '#8BE9FD'
-  let g:terminal_color_7  = '#F8F8F2'
-  let g:terminal_color_8  = '#6272A4'
-  let g:terminal_color_9  = '#FF6E6E'
-  let g:terminal_color_10 = '#69FF94'
-  let g:terminal_color_11 = '#FFFFA5'
-  let g:terminal_color_12 = '#D6ACFF'
-  let g:terminal_color_13 = '#FF92DF'
-  let g:terminal_color_14 = '#A4FFFF'
-  let g:terminal_color_15 = '#FFFFFF'
+  for s:i in range(16)
+    let g:terminal_color_{s:i} = g:dracula#palette['color_' . s:i]
+  endfor
 endif
 
 if has('terminal')
-  let g:terminal_ansi_colors = [
-      \ '#21222C', '#FF5555', '#50FA7B', '#F1FA8C',
-      \ '#BD93F9', '#FF79C6', '#8BE9FD', '#F8F8F2',
-      \ '#6272A4', '#FF6E6E', '#69FF94', '#FFFFA5',
-      \ '#D6ACFF', '#FF92DF', '#A4FFFF', '#FFFFFF'
-      \]
+  let g:terminal_ansi_colors = []
+  for s:i in range(16)
+    call add(g:terminal_ansi_colors, g:dracula#palette['color_' . s:i])
+  endfor
 endif
 
 " }}}2
@@ -163,14 +128,6 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
         \]
 
   execute join(l:hl_string, ' ')
-endfunction
-
-function! s:Background()
-  if g:dracula_colorterm || has('gui_running')
-    return s:bg
-  else
-    return s:none
-  endif
 endfunction
 
 "}}}2
@@ -242,7 +199,7 @@ call s:h('DraculaDiffDelete', s:red, s:bgdark)
 set background=dark
 
 " Required as some plugins will overwrite
-call s:h('Normal', s:fg, s:Background())
+call s:h('Normal', s:fg, g:dracula_colorterm || has('gui_running') ? s:bg : s:none )
 call s:h('StatusLine', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineNC', s:none, s:bglight)
 call s:h('StatusLineTerm', s:none, s:bglighter, [s:attrs.bold])
@@ -348,4 +305,4 @@ hi! link helpBacktick Special
 
 "}}}
 
-" vim: fdm=marker ts=2 sts=2 sw=2:
+" vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:

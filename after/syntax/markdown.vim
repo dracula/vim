@@ -47,4 +47,4 @@ elseif b:current_syntax ==# 'markdown'
 "}}}
 endif
 
-" vim: fdm=marker ts=2 sts=2 sw=2:
+" vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
