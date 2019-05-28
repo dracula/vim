@@ -17,7 +17,7 @@ func! s:clr(fg, bg, ...)
   let l:fg = g:dracula#palette[a:fg]
   let l:bg = g:dracula#palette[a:bg]
   return [ l:fg[0], l:bg[0], l:fg[1], l:bg[1] ] +
-       \ filter(copy(a:000), {_, val -> type(val) == 1 && len(val) > 0 })
+       \ filter(copy(a:000), 'type(v:val) == 1 && len(v:val) > 0')
 endfunc
 
 " Takes three ['fg', 'bg'] color lists and optionally a dictionary of extra
