@@ -2,6 +2,8 @@ if dracula#should_abort('typescript')
     finish
 endif
 
+" HerringtonDarkholme/yats.vim {{{
+
 hi! link typescriptAliasDeclaration       Type
 hi! link typescriptArrayMethod            Function
 hi! link typescriptArrowFunc              Operator
@@ -47,7 +49,9 @@ hi! link typescriptRestOrSpread           Operator
 hi! link typescriptTernaryOp              Operator
 hi! link typescriptTypeAnnotation         Special
 hi! link typescriptTypeCast               Operator
-hi! link typescriptTypeReference          Type
 hi! link typescriptTypeParameter          DraculaOrangeItalic
+hi! link typescriptTypeReference          Type
 hi! link typescriptUnaryOp                Operator
 hi! link typescriptVariable               Keyword
+
+" }}}
