@@ -25,6 +25,18 @@ For example, if you use `~/.vim/pack/themes/start/my-dracula-theme`, you would d
 For users of other plugin managers, consult your documentation
 to make sure you put dracula on the `'runtimepath'` before loading it.
 
+### If you use a plugin manager
+
+**For example**
+
+For [dein.vim](https://github.com/Shougo/dein.vim)
+
+`call dein#add('dracula/vim')`
+
+For [vim-plug](https://github.com/junegunn/vim-plug)
+
+`Plug 'dracula/vim'`
+
 ## Team
 
 This theme is maintained by the following person(s) and a bunch of
