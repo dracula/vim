@@ -112,8 +112,8 @@ let g:airline#themes#dracula#palette = {
 \       },
 \     ),
 \   'inactive': s:color_map(
-\       ['fg', 'selection'],
-\       ['fg', 'selection'],
+\       ['bg', 'comment'],
+\       ['fg', 'bgdark'],
 \       ['fg', 'selection'],
 \       {
 \         'airline_warning': s:clr('bg', 'orange'),
