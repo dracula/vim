@@ -21,7 +21,7 @@ if exists('g:lightline')
   let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
   let s:p.normal.left = [ [ s:black, s:purple ], [ s:cyan, s:gray ] ]
   let s:p.normal.right = [ [ s:black, s:purple ], [ s:white, s:darkblue ] ]
-  let s:p.inactive.right = [ [ s:black, s:gray ], [ s:white, s:black ] ]
+  let s:p.inactive.right = [ [ s:black, s:darkblue ], [ s:white, s:black ] ]
   let s:p.inactive.left =  [ [ s:cyan, s:black ], [ s:white, s:black ] ]
   let s:p.insert.left = [ [ s:black, s:green ], [ s:cyan, s:gray ] ]
   let s:p.replace.left = [ [ s:black, s:red ], [ s:cyan, s:gray ] ]
