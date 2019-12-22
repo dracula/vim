@@ -10,3 +10,26 @@ hi! link yamlFlowIndicator   Delimiter
 hi! link yamlNodeTag         DraculaPink
 hi! link yamlPlainScalar     DraculaYellow
 
+" stephpy/yaml {{{
+
+" yamlConstant
+hi! link Keyword DraculaPurple
+" yamlIndicator
+hi! link PreCondit DraculaPink
+" yamlAnchor, yamlAlias
+hi! link Function DraculaPinkItalic
+" yamlKey
+hi! link Identifier DraculaCyan
+" yamlType
+hi! link Type DraculaPink
+
+" yamlComment
+hi! link Comment DraculaComment
+" yamlInline, yamlBlock
+hi! link Operator Delimiter
+" yamlString
+hi! link String DraculaYellow
+" yamlEscape
+hi! link Special DraculaPink
+
+" }}}
