@@ -10,7 +10,7 @@ hi! link yamlFlowIndicator   Delimiter
 hi! link yamlNodeTag         DraculaPink
 hi! link yamlPlainScalar     DraculaYellow
 
-" Links for stephpy/yaml
+" stephpy/yaml {{{
 
 " yamlConstant
 hi! link Keyword DraculaPurple
@@ -31,3 +31,5 @@ hi! link Operator Delimiter
 hi! link String DraculaYellow
 " yamlEscape
 hi! link Special DraculaPink
+
+" }}}
