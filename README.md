@@ -2,7 +2,7 @@
 
 > A dark theme for [Vim](http://www.vim.org/).
 
-![Screenshot](https://draculatheme.com/assets/img/screenshots/vim.png)
+![Screenshot](./screenshot.png)
 
 ## Install
 
