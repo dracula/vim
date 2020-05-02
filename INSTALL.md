@@ -11,6 +11,9 @@ sections below, if you use other plugin managers.
 mkdir -p ~/.vim/pack/themes/start
 ```
 
+If you use vim 8.0 (and not 8.2), you may need to use
+`~/.vim/pack/themes/opt` instead.
+
 2. Navigate to the folder above:
 
 ```
