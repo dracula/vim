@@ -4,6 +4,9 @@
 
 ![Screenshot](./screenshot.png)
 
+Screenshot taken with the [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
+syntax plugin for javascript.
+
 ## Install
 
 All instructions can be found at [draculatheme.com/vim](https://draculatheme.com/vim).
