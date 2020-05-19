@@ -64,6 +64,17 @@ the plugin in a directory called 'dracula' instead of just 'vim'):
 
 Place `colorscheme dracula` after `call plug#end()`.
 
+If you [use spacevim](https://spacevim.org), put the
+following in `~/.SpaceVim.d/init.toml`:
+
+```
+[[custom_plugins]]
+  name = "dracula/vim"
+[options]
+  colorscheme = "dracula"
+  colorscheme_bg = "dark
+```
+
 ---
 
 Note that dracula must be in your `'runtimepath'` to load properly: Version 2.0
