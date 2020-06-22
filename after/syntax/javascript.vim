@@ -20,6 +20,7 @@ hi! link jsFuncArgOperator         Operator
 hi! link jsFunction                Keyword
 hi! link jsTemplateBraces          Special
 hi! link jsModuleAsterisk          DraculaPurpleItalic
+hi! link jsVariableDef             DraculaPurple
 
 "}}}
 
