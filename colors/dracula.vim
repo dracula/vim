@@ -31,6 +31,8 @@ endif
 
 " Palette: {{{2
 
+call dracula#create_palette ()
+
 let s:fg        = g:dracula#palette.fg
 
 let s:bglighter = g:dracula#palette.bglighter
