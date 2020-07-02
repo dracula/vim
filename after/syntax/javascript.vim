@@ -1,4 +1,4 @@
-if dracula#should_abort('javascript', 'javascript.jsx') 
+if dracula#should_abort('javascript', 'javascriptreact', 'javascript.jsx') 
   finish
 endif
 
@@ -24,10 +24,13 @@ hi! link jsVariableDef             DraculaPurple
 
 "}}}
 
-" maxmellon/vim-jsx-pretty 
+" maxmellon/vim-jsx-pretty {{{
 
-hi! link jsxComponentName   Type
-hi! link jsxAttrib          DraculaGreenItalic
-hi! link jsxCloseString     DraculaFg
+hi! link jsxTagName         Function
+hi! link jsxCloseTag        DraculaPurple
+hi! link jsxCloseString     Comment
+hi! link jsxOpenPunct       Comment
+
+" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
