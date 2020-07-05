@@ -24,10 +24,13 @@ hi! link jsTemplateBraces          Special
 
 " maxmellon/vim-jsx-pretty {{{
 
-hi! link jsxTagName         Function
-hi! link jsxCloseTag        DraculaPurple
-hi! link jsxCloseString     Comment
-hi! link jsxOpenPunct       Comment
+hi! link jsxTag             Keyword
+hi! link jsxTagName         Keyword
+hi! link jsxComponentName   Type
+hi! link jsxCloseTag        Type
+hi! link jsxAttrib          DraculaGreenItalic
+hi! link jsxCloseString     Identifier
+hi! link jsxOpenPunct       Identifier
 
 " }}}
 
