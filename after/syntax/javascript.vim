@@ -1,4 +1,4 @@
-if dracula#should_abort('javascript', 'javascriptreact', 'javascript.jsx') 
+if dracula#should_abort('javascript', 'javascriptreact', 'javascript.jsx')
   finish
 endif
 
@@ -19,8 +19,6 @@ hi! link jsDocTypeBrackets         DraculaCyan
 hi! link jsFuncArgOperator         Operator
 hi! link jsFunction                Keyword
 hi! link jsTemplateBraces          Special
-hi! link jsModuleAsterisk          DraculaPurpleItalic
-hi! link jsVariableDef             DraculaPurple
 
 "}}}
 
