@@ -1,5 +1,5 @@
-if dracula#should_abort('javascript')
-    finish
+if dracula#should_abort('javascript', 'javascriptreact', 'javascript.jsx')
+  finish
 endif
 
 hi! link javaScriptBraces   Delimiter
@@ -21,5 +21,17 @@ hi! link jsFunction                Keyword
 hi! link jsTemplateBraces          Special
 
 "}}}
+
+" maxmellon/vim-jsx-pretty {{{
+
+hi! link jsxTag             Keyword
+hi! link jsxTagName         Keyword
+hi! link jsxComponentName   Type
+hi! link jsxCloseTag        Type
+hi! link jsxAttrib          DraculaGreenItalic
+hi! link jsxCloseString     Identifier
+hi! link jsxOpenPunct       Identifier
+
+" }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
