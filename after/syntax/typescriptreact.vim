@@ -1,4 +1,4 @@
-if dracula#should_abort('typescriptreact')
+if dracula#should_abort('typescriptreact', 'typescript.tsx')
     finish
 endif
 
