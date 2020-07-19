@@ -67,12 +67,14 @@ Place `colorscheme dracula` after `call plug#end()`.
 If you [use spacevim](https://spacevim.org), put the
 following in `~/.SpaceVim.d/init.toml`:
 
-```
-[[custom_plugins]]
-  name = "dracula/vim"
+```toml
 [options]
   colorscheme = "dracula"
   colorscheme_bg = "dark
+[[custom_plugins]]
+  repo = "dracula/vim"
+  name = "dracula"
+  merged = false
 ```
 
 ---
