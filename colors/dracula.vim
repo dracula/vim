@@ -81,8 +81,8 @@ if !exists('g:dracula_underline')
   let g:dracula_underline = 1
 endif
 
-if !exists('g:dracula_undercurl') && g:dracula_underline != 0
-  let g:dracula_undercurl = 1
+if !exists('g:dracula_undercurl')
+  let g:dracula_undercurl = g:dracula_underline
 endif
 
 if !exists('g:dracula_inverse')
