@@ -10,6 +10,7 @@ hi! link luaTable DraculaFg
 hi! link luaBraces       DraculaFg
 hi! link luaBuiltIn      DraculaPurpleItalic
 hi! link luaDocTag       Keyword
+hi! link luaErrHand      DraculaCyan
 hi! link luaFuncArgName  DraculaOrangeItalic
 hi! link luaFuncCall     Function
 hi! link luaFuncKeyword  Keyword
