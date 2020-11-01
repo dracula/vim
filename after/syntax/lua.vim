@@ -13,7 +13,6 @@ hi! link luaDocTag       Keyword
 hi! link luaErrHand      DraculaCyan
 hi! link luaFuncArgName  DraculaOrangeItalic
 hi! link luaFuncCall     Function
-hi! link luaFuncKeyword  Keyword
 hi! link luaLocal        Keyword
 hi! link luaSpecialTable DraculaPurple
 hi! link luaSpecialValue DraculaCyan
