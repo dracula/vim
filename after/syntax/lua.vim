@@ -14,7 +14,7 @@ hi! link luaErrHand      DraculaCyan
 hi! link luaFuncArgName  DraculaOrangeItalic
 hi! link luaFuncCall     Function
 hi! link luaLocal        Keyword
-hi! link luaSpecialTable DraculaPurple
+hi! link luaSpecialTable Constant
 hi! link luaSpecialValue DraculaCyan
 
 " }}}
