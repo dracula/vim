@@ -8,7 +8,7 @@ hi! link luaTable DraculaFg
 " tbastos/vim-lua {{{
 
 hi! link luaBraces       DraculaFg
-hi! link luaBuiltIn      DraculaPurpleItalic
+hi! link luaBuiltIn      Constant
 hi! link luaDocTag       Keyword
 hi! link luaErrHand      DraculaCyan
 hi! link luaFuncArgName  DraculaOrangeItalic
