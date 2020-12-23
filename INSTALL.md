@@ -70,7 +70,7 @@ following in `~/.SpaceVim.d/init.toml`:
 ```toml
 [options]
   colorscheme = "dracula"
-  colorscheme_bg = "dark
+  colorscheme_bg = "dark"
 [[custom_plugins]]
   repo = "dracula/vim"
   name = "dracula"
