@@ -54,20 +54,20 @@ if exists('g:loaded_nvim_treesitter')
   hi! link TSConstMacro DraculaCyan
   hi! link TSStringRegex DraculaYellow
   hi! link TSString DraculaYellow
-  hi! link TSStringEscape DraculaCyan
+  hi! link TSStringEscape DraculaPink
   hi! link TSSymbol DraculaPurple
   hi! link TSCharacter DraculaGreen
   hi! link TSNumber DraculaPurple
   hi! link TSBoolean DraculaPurple
   hi! link TSFloat DraculaPurple
   hi! link TSAnnotation DraculaYellow
-  hi! link TSAttribute DraculaCyan
+  hi! link TSAttribute DraculaGreenItalic
   hi! link TSNamespace DraculaPink
   " # Functions
   hi! link TSFuncBuiltin DraculaCyan
   hi! link TSFunction DraculaGreen
   hi! link TSFuncMacro DraculaGreen
-  hi! link TSParameter DraculaOrange
+  hi! link TSParameter DraculaOrangeItalic
   hi! link TSParameterReference DraculaOrange
   hi! link TSMethod DraculaGreen
   hi! link TSField DraculaOrange
@@ -88,12 +88,12 @@ if exists('g:loaded_nvim_treesitter')
   hi! link TSInclude DraculaPink
   " # Variable
   hi! link TSVariable Normal
-  hi! link TSVariableBuiltin DraculaPurple
+  hi! link TSVariableBuiltin DraculaPurpleItalic
   " # Text
-  hi! link TSText DraculaYellow
-  hi! link TSStrong DraculaYellowBold
-  hi! link TSEmphasis DraculaYellowItalic
-  hi! link TSUnderline DraculaYellowUnderline
+  hi! link TSText DraculaFg
+  hi! link TSStrong DraculaFg
+  hi! link TSEmphasis DraculaFg
+  hi! link TSUnderline DraculaFg
   hi! link TSTitle DraculaYellow
   hi! link TSLiteral DraculaYellow
   hi! link TSURI DraculaYellow
