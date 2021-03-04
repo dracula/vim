@@ -174,7 +174,9 @@ call s:h('DraculaRed', s:red)
 call s:h('DraculaRedInverse', s:fg, s:red)
 
 call s:h('DraculaYellow', s:yellow)
+call s:h('DraculaYellowBold', s:yellow, s:none, [s:attrs.bold])
 call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
+call s:h('DraculaYellowUnderline', s:yellow, s:none, [s:attrs.underline])
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
