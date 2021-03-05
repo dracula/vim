@@ -44,56 +44,56 @@ endif
 " Tree-sitter: {{{
 if exists('g:loaded_nvim_treesitter')
   " # Misc
-  hi! link TSError DraculaRed
-  hi! link TSPunctDelimiter Normal
+  hi! link TSError ErrorMsg
+  hi! link TSPunctDelimiter Delimiter
   hi! link TSPunctBracket Normal
-  hi! link TSPunctSpecial Normal
+  hi! link TSPunctSpecial Special
   " # Constants
-  hi! link TSConstant DraculaPurple
-  hi! link TSConstBuiltin DraculaPurple
-  hi! link TSConstMacro DraculaCyan
-  hi! link TSStringRegex DraculaYellow
-  hi! link TSString DraculaYellow
-  hi! link TSStringEscape DraculaPink
+  hi! link TSConstant Constant
+  hi! link TSConstBuiltin Constant
+  hi! link TSConstMacro Macro
+  hi! link TSStringRegex String
+  hi! link TSString String
+  hi! link TSStringEscape Character
   hi! link TSSymbol DraculaPurple
-  hi! link TSCharacter DraculaGreen
-  hi! link TSNumber DraculaPurple
-  hi! link TSBoolean DraculaPurple
-  hi! link TSFloat DraculaPurple
+  hi! link TSCharacter Character
+  hi! link TSNumber Number
+  hi! link TSBoolean Boolean
+  hi! link TSFloat Float
   hi! link TSAnnotation DraculaYellow
   hi! link TSAttribute DraculaGreenItalic
-  hi! link TSNamespace DraculaPink
+  hi! link TSNamespace Structure
   " # Functions
   hi! link TSFuncBuiltin DraculaCyan
-  hi! link TSFunction DraculaGreen
-  hi! link TSFuncMacro DraculaGreen
+  hi! link TSFunction Function
+  hi! link TSFuncMacro Function
   hi! link TSParameter DraculaOrangeItalic
   hi! link TSParameterReference DraculaOrange
-  hi! link TSMethod DraculaGreen
+  hi! link TSMethod Function
   hi! link TSField DraculaOrange
   hi! link TSProperty Normal
   hi! link TSConstructor DraculaCyan
   " # Keywords
-  hi! link TSConditional DraculaPink
+  hi! link TSConditional Conditional
   hi! link TSRepeat DraculaPink
   hi! link TSLabel DraculaPurpleItalic
-  hi! link TSKeyword DraculaPink
+  hi! link TSKeyword Keyword
   hi! link TSKeywordFunction DraculaCyan
   hi! link TSKeywordOperator DraculaPink
-  hi! link TSOperator DraculaPink
+  hi! link TSOperator Operator
   hi! link TSException DraculaPurple
-  hi! link TSType DraculaCyanItalic
-  hi! link TSTypeBuiltin DraculaCyanItalic
-  hi! link TSStructure DraculaPurple
-  hi! link TSInclude DraculaPink
+  hi! link TSType Type
+  hi! link TSTypeBuiltin Type
+  hi! link TSStructure Structure
+  hi! link TSInclude Include
   " # Variable
   hi! link TSVariable Normal
   hi! link TSVariableBuiltin DraculaPurpleItalic
   " # Text
-  hi! link TSText DraculaFg
-  hi! link TSStrong DraculaFg
+  hi! link TSText Normal
+  hi! link TSStrong DraculaFgBold
   hi! link TSEmphasis DraculaFg
-  hi! link TSUnderline DraculaFg
+  hi! link TSUnderline Underlined
   hi! link TSTitle DraculaYellow
   hi! link TSLiteral DraculaYellow
   hi! link TSURI DraculaYellow
