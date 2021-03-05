@@ -79,7 +79,7 @@ if exists('g:loaded_nvim_treesitter')
   hi! link TSLabel DraculaPurpleItalic
   hi! link TSKeyword Keyword
   hi! link TSKeywordFunction DraculaCyan
-  hi! link TSKeywordOperator DraculaPink
+  hi! link TSKeywordOperator Operator
   hi! link TSOperator Operator
   hi! link TSException DraculaPurple
   hi! link TSType Type
