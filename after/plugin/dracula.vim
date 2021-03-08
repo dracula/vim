@@ -44,7 +44,6 @@ endif
 " Tree-sitter: {{{
 if exists('g:loaded_nvim_treesitter')
   " # Misc
-  hi! link TSError ErrorMsg
   hi! link TSPunctSpecial Special
   " # Constants
   hi! link TSConstMacro Macro
