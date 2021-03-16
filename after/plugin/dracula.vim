@@ -41,6 +41,26 @@ if exists('g:loaded_ctrlp')
   hi! link CtrlPBufferHid Normal
 endif
 " }}}
+" GitGutter / gitsigns: {{{
+if exists('g:loaded_gitgutter')
+  hi! link GitGutterAdd    DiffAdd
+  hi! link GitGutterChange DiffChange
+  hi! link GitGutterDelete DiffDelete
+endif
+if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
+  " https://github.com/lewis6991/gitsigns.nvim requires nvim > 0.5
+  " has('nvim-0.5') checks >= 0.5, so this should be future-proof.
+  hi! link GitSignsAdd      DiffAdd
+  hi! link GitSignsAddLn    DiffAdd
+  hi! link GitSignsAddNr    DiffAdd
+  hi! link GitSignsChange   DiffChange
+  hi! link GitSignsChangeLn DiffChange
+  hi! link GitSignsChangeNr DiffChange
+  hi! link GitSignsDelete   DiffDelete
+  hi! link GitSignsDeleteLn DiffDelete
+  hi! link GitSignsDeleteNr DiffDelete
+endif
+" }}}
 " Tree-sitter: {{{
 if exists('g:loaded_nvim_treesitter')
   " # Misc
