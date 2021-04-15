@@ -10,6 +10,8 @@ hi! link javaScriptFunction Keyword
 " pangloss/vim-javascript {{{
 
 hi! link jsArrowFunction           Operator
+hi! link jsBuiltins                DraculaCyan
+hi! link jsClassDefinition         DraculaCyan
 hi! link jsClassMethodType         Keyword
 hi! link jsDestructuringAssignment DraculaOrangeItalic
 hi! link jsDocParam                DraculaOrangeItalic
@@ -17,8 +19,14 @@ hi! link jsDocTags                 Keyword
 hi! link jsDocType                 Type
 hi! link jsDocTypeBrackets         DraculaCyan
 hi! link jsFuncArgOperator         Operator
+hi! link jsFuncArgs                DraculaOrangeItalic
 hi! link jsFunction                Keyword
+hi! link jsNull                    Constant
+hi! link jsObjectColon             DraculaPink
+hi! link jsSuper                   DraculaPurpleItalic
 hi! link jsTemplateBraces          Special
+hi! link jsThis                    DraculaPurpleItalic
+hi! link jsUndefined               Constant
 
 "}}}
 
