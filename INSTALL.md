@@ -35,7 +35,7 @@ git clone https://github.com/dracula/vim.git dracula
 ```
 (Or use your favorite GUI client, or download the ZIP)
 
-5. Edit your `vimrc` file with the following content:
+4. Edit your `vimrc` file with the following content:
 
 ```
 packadd! dracula
