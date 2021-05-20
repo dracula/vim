@@ -262,7 +262,7 @@ if has('nvim')
   hi! link LspDiagnosticsUnderlineInformation DraculaInfoLine
   hi! link LspDiagnosticsUnderlineWarning DraculaWarnLine
 else
-  hi! link SpecialKey DraculaSubtle
+  hi! link SpecialKey DraculaPink
 endif
 
 hi! link Comment DraculaComment
