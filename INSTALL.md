@@ -7,32 +7,35 @@ sections below, if you use other plugin managers.
 
 1. Create theme folder (in case you don't have yet):
 
+
+- \*nix:
 ```
 mkdir -p ~/.vim/pack/themes/start
 ```
 
-If you use vim 8.0 (and not 8.2), you may need to use
-`~/.vim/pack/themes/opt` instead.
+- Windows: create directory `$HOME\vimfiles\pack\themes\start`
+
+If you use vim 8.0 (and not 8.2), you may need to use `~/.vim/pack/themes/opt`
+or `$HOME\vimfiles\pack\themes\opt` instead.
 
 2. Navigate to the folder above:
 
+
+- \*nix:
 ```
 cd ~/.vim/pack/themes/start
 ```
+
+- Windows: navigate to `$HOME\vimfiles\pack\themes\start`
 
 3. Clone the repository using the "dracula" name:
 
 ```
 git clone https://github.com/dracula/vim.git dracula
 ```
+(Or use your favorite GUI client, or download the ZIP)
 
-4. Create configuration file (in case you don't have yet):
-
-```
-touch ~/.vimrc
-```
-
-5. Edit the `~/.vimrc` file with the following content:
+4. Edit your `vimrc` file with the following content:
 
 ```
 packadd! dracula
@@ -40,23 +43,28 @@ syntax enable
 colorscheme dracula
 ```
 
+The location of the `vimrc` varies between platforms:
+- \*nix: `~/.vim/vimrc` or `~/.vimrc`
+- Windows: `$HOME\vimfiles\vimrc` or `$HOME\_vimrc`
+
 #### Install using other plugin managers
 
-If you [use vim + pathogen](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/):
+- If you [use vim + pathogen + submodules](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/):
 
-    cd ~/.vim
+Navigate to your vim directory (\*nix: `~/.vim`; Windows: `$HOME\vimfiles`)
+
     git submodule add git@github.com:dracula/vim.git bundle/dracula
 
 Place `colorscheme dracula` after `execute pathogen#infect()`.
 
-If you [use vim + vundle](https://github.com/VundleVim/Vundle):
+- If you [use vim + vundle](https://github.com/VundleVim/Vundle):
 
     Plugin 'dracula/vim', { 'name': 'dracula' }
     :PluginInstall
 
 Place `colorscheme dracula` after `call vundle#end()`.
 
-If you [use vim-plug](https://github.com/junegunn/vim-plug) (\`as\` will install
+- If you [use vim-plug](https://github.com/junegunn/vim-plug) (\`as\` will install
 the plugin in a directory called 'dracula' instead of just 'vim'):
 
     Plug 'dracula/vim', { 'as': 'dracula' }
@@ -64,7 +72,7 @@ the plugin in a directory called 'dracula' instead of just 'vim'):
 
 Place `colorscheme dracula` after `call plug#end()`.
 
-If you [use spacevim](https://spacevim.org), put the
+- If you [use spacevim](https://spacevim.org), put the
 following in `~/.SpaceVim.d/init.toml`:
 
 ```toml

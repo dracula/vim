@@ -11,7 +11,6 @@ hi! link texLigature      DraculaPurple
 hi! link texMath          DraculaPurple
 hi! link texMathMatcher   DraculaPurple
 hi! link texMathSymbol    DraculaPurple
-hi! link texRefZone       DraculaBgDarker
 hi! link texSpecialChar   DraculaPurple
 hi! link texSubscripts    DraculaPurple
 hi! link texTitle         DraculaFgBold
