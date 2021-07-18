@@ -89,6 +89,8 @@ if exists('g:loaded_nvim_treesitter')
   hi! link TSTitle DraculaYellow
   hi! link TSLiteral DraculaYellow
   hi! link TSURI DraculaYellow
+  " # Tags
+  hi! link TSTagAttribute DraculaGreenItalic
 endif
 " }}}
 
