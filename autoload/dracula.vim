@@ -54,4 +54,13 @@ func! dracula#should_abort(...)
     return 0
 endfunction
 
+" Use termguicolors instead of 256
+if (has('nvim'))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR = 1
+endif
+
+if (has('termguicolors'))
+  set termguicolors
+endif
+
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
