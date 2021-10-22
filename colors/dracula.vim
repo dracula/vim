@@ -115,8 +115,8 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   let l:attr_list = filter(get(a:, 2, ['NONE']), 'type(v:val) == 1')
   let l:attrs = len(l:attr_list) > 0 ? join(l:attr_list, ',') : 'NONE'
 
-  " If the UI has not full support for special attributes (like underline and
-  " undercurl) and the highlight does not explicitly sets the foreground color,
+  " If the UI does not have full support for special attributes (like underline and
+  " undercurl) and the highlight does not explicitly set the foreground color,
   " make the foreground the same as the attribute color to ensure the user will
   " get some highlight if the attribute is not supported. The default behavior
   " is to assume that terminals do not have full support, but the user can set
