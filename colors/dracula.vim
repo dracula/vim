@@ -270,6 +270,18 @@ if has('nvim')
   hi! link DiagnosticUnderlineHint DraculaInfoLine
   hi! link DiagnosticUnderlineInfo DraculaInfoLine
   hi! link DiagnosticUnderlineWarn DraculaWarnLine
+
+  " Link old 'LspDiagnosticsDefault*' hl groups
+  " for backward compatibility with neovim v0.5.x
+  hi! link LspDiagnosticsDefaultInformation DiagnosticInfo
+  hi! link LspDiagnosticsDefaultHint DiagnosticHint
+  hi! link LspDiagnosticsDefaultError DiagnosticError
+  hi! link LspDiagnosticsDefaultWarning DiagnosticWarn
+  hi! link LspDiagnosticsUnderlineError DiagnosticUnderlineError
+  hi! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
+  hi! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
+  hi! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
+   
 else
   hi! link SpecialKey DraculaPink
 endif
