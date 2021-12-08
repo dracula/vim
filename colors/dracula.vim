@@ -262,14 +262,25 @@ if has('nvim')
   hi! link LspReferenceText DraculaSelection
   hi! link LspReferenceRead DraculaSelection
   hi! link LspReferenceWrite DraculaSelection
-  hi! link LspDiagnosticsDefaultInformation DraculaCyan
-  hi! link LspDiagnosticsDefaultHint DraculaCyan
-  hi! link LspDiagnosticsDefaultError DraculaError
-  hi! link LspDiagnosticsDefaultWarning DraculaOrange
-  hi! link LspDiagnosticsUnderlineError DraculaErrorLine
-  hi! link LspDiagnosticsUnderlineHint DraculaInfoLine
-  hi! link LspDiagnosticsUnderlineInformation DraculaInfoLine
-  hi! link LspDiagnosticsUnderlineWarning DraculaWarnLine
+  " Link old 'LspDiagnosticsDefault*' hl groups
+  " for backward compatibility with neovim v0.5.x
+  hi! link LspDiagnosticsDefaultInformation DiagnosticInfo
+  hi! link LspDiagnosticsDefaultHint DiagnosticHint
+  hi! link LspDiagnosticsDefaultError DiagnosticError
+  hi! link LspDiagnosticsDefaultWarning DiagnosticWarn
+  hi! link LspDiagnosticsUnderlineError DiagnosticUnderlineError
+  hi! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
+  hi! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
+  hi! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
+  
+  hi! link DiagnosticInfo DraculaCyan
+  hi! link DiagnosticHint DraculaCyan
+  hi! link DiagnosticError DraculaError
+  hi! link DiagnosticWarn DraculaOrange
+  hi! link DiagnosticUnderlineError DraculaErrorLine
+  hi! link DiagnosticUnderlineHint DraculaInfoLine
+  hi! link DiagnosticUnderlineInfo DraculaInfoLine
+  hi! link DiagnosticUnderlineWarn DraculaWarnLine
 else
   hi! link SpecialKey DraculaPink
 endif
