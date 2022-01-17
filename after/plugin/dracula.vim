@@ -133,6 +133,8 @@ if exists('g:loaded_cmp')
   hi! link CmpItemKindEvent DraculaFg
   hi! link CmpItemKindOperator DraculaPink
   hi! link CmpItemKindTypeParameter DraculaCyan
+
+  hi! link CmpItemMenu Comment
 endif
 " }}}
 
