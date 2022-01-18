@@ -208,15 +208,15 @@ call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
 call s:h('CursorLine', s:none, s:subtle)
 
 call s:h('DiffAdd', s:green)
+call s:h('DiffAdded', s:green)
 call s:h('DiffChange', s:orange, s:none)
 call s:h('DiffText', s:bg, s:orange)
 call s:h('DiffDelete', s:red, s:bgdark)
+call s:h('DiffRemoved', s:red, s:bgdark)
 
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
 hi! link CursorLineNr DraculaYellow
-hi! link DiffAdded    DiffAdd
-hi! link DiffRemoved  DiffDelete
 hi! link Directory    DraculaPurpleBold
 hi! link ErrorMsg     DraculaRedInverse
 hi! link FoldColumn   DraculaSubtle
