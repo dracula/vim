@@ -250,9 +250,6 @@ hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrangeInverse
 
-if has('nvim')
-  hi! link WinSeparator DraculaWinSeparator
-endif
 " }}}
 " Syntax: {{{
 
@@ -285,6 +282,8 @@ if has('nvim')
   hi! link DiagnosticUnderlineHint DraculaInfoLine
   hi! link DiagnosticUnderlineInfo DraculaInfoLine
   hi! link DiagnosticUnderlineWarn DraculaWarnLine
+
+  hi! link WinSeparator DraculaWinSeparator
 else
   hi! link SpecialKey DraculaPink
 endif
