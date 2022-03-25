@@ -102,7 +102,7 @@ endif
 " nvim-cmp: {{{
 " A completion engine plugin for neovim written in Lua.
 " https://github.com/hrsh7th/nvim-cmp
-if exists('g:loaded_cmp')
+function! s:set_cmp()
   hi! link CmpItemAbbrDeprecated DraculaError
 
   hi! link CmpItemAbbrMatch DraculaCyan
@@ -135,7 +135,12 @@ if exists('g:loaded_cmp')
   hi! link CmpItemKindTypeParameter DraculaCyan
 
   hi! link CmpItemMenu Comment
-endif
+endfunction
+
+augroup ___dracula_cmp___
+  au!
+  au User CmpReady call s:set_cmp()
+augroup END
 " }}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0:
