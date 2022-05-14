@@ -198,7 +198,7 @@ call s:h('DraculaWinSeparator', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 call s:h('DraculaDiffChange', s:orange, s:none)
-call s:h('DraculaDiffText', s:bg, s:orange)
+call s:h('DraculaDiffText', s:orange, s:bg, ['reverse'])
 call s:h('DraculaDiffDelete', s:red, s:bgdark)
 
 " }}}2
