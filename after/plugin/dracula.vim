@@ -101,7 +101,6 @@ if exists('g:loaded_nvim_treesitter')
 	hi! link TSPunctDelimiter DraculaPink
 	hi! link TSType DraculaPink
 	hi! link TSProperty DraculaCyan
-	hi! link TSFunction DraculaGreenItalic
 	hi! link TSError DraculaOrange
 endif
 " }}}
