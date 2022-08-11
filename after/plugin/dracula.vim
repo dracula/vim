@@ -97,6 +97,12 @@ if exists('g:loaded_nvim_treesitter')
   " HTML and JSX tag attributes. By default, this group is linked to TSProperty,
   " which in turn links to Identifer (white).
   hi! link TSTagAttribute DraculaGreenItalic
+	" CSS
+	hi! link TSPunctDelimiter DraculaPink
+	hi! link TSType DraculaPink
+	hi! link TSProperty DraculaCyan
+	hi! link TSFunction DraculaGreenItalic
+	hi! link TSError DraculaOrange
 endif
 " }}}
 " nvim-cmp: {{{
