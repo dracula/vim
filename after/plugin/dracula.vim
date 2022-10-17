@@ -69,34 +69,34 @@ endif
 " https://github.com/nvim-treesitter/nvim-treesitter/blob/master/plugin/nvim-treesitter.vim
 if exists('g:loaded_nvim_treesitter')
   " # Misc
-  hi! link TSPunctSpecial Special
+  hi! link @punctuation.special Special
   " # Constants
-  hi! link TSConstMacro Macro
-  hi! link TSStringEscape Character
-  hi! link TSSymbol DraculaPurple
-  hi! link TSAnnotation DraculaYellow
-  hi! link TSAttribute DraculaGreenItalic
+  hi! link @constant.macro Macro
+  hi! link @string.escape Character
+  hi! link @symbol DraculaPurple
+  hi! link @annotation DraculaYellow
+  hi! link @attribute DraculaGreenItalic
   " # Functions
-  hi! link TSFuncBuiltin DraculaCyan
-  hi! link TSFuncMacro Function
-  hi! link TSParameter DraculaOrangeItalic
-  hi! link TSParameterReference DraculaOrange
-  hi! link TSField DraculaOrange
-  hi! link TSConstructor DraculaCyan
+  hi! link @function.builtin DraculaCyan
+  hi! link @funcion.macro Function
+  hi! link @parameter DraculaOrangeItalic
+  hi! link @parameter.reference DraculaOrange
+  hi! link @field DraculaOrange
+  hi! link @constructor DraculaCyan
   " # Keywords
-  hi! link TSLabel DraculaPurpleItalic
+  hi! link @label DraculaPurpleItalic
   " # Variable
-  hi! link TSVariableBuiltin DraculaPurpleItalic
+  hi! link @variable.builtin DraculaPurpleItalic
   " # Text
-  hi! link TSStrong DraculaFgBold
-  hi! link TSEmphasis DraculaFg
-  hi! link TSUnderline Underlined
-  hi! link TSTitle DraculaYellow
-  hi! link TSLiteral DraculaYellow
-  hi! link TSURI DraculaYellow
+  hi! link @text.strong DraculaFgBold
+  hi! link @text.emphasis DraculaFg
+  hi! link @text.underline Underlined
+  hi! link @text.title DraculaYellow
+  hi! link @text.literal DraculaYellow
+  hi! link @text.uri DraculaYellow
   " HTML and JSX tag attributes. By default, this group is linked to TSProperty,
   " which in turn links to Identifer (white).
-  hi! link TSTagAttribute DraculaGreenItalic
+  hi! link @tag.attribute DraculaGreenItalic
 endif
 " }}}
 " nvim-cmp: {{{
