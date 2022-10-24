@@ -68,7 +68,7 @@ endif
 " specification.
 " https://github.com/nvim-treesitter/nvim-treesitter/blob/master/plugin/nvim-treesitter.vim
 if exists('g:loaded_nvim_treesitter')
-  " deplicated TS* highlight groups
+  " deprecated TS* highlight groups
   " see https://github.com/nvim-treesitter/nvim-treesitter/pull/3656
   " # Misc
   hi! link TSPunctSpecial Special
