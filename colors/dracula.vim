@@ -202,7 +202,7 @@ call s:h('DraculaWinSeparator', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 if g:dracula_high_contrast_diff
-  call s:h('DraculaDiffChange', s:red, s:green)
+  call s:h('DraculaDiffChange', s:yellow, s:purple)
 else
   call s:h('DraculaDiffChange', s:orange, s:none)
 endif
