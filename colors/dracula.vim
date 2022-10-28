@@ -50,6 +50,7 @@ let s:pink      = g:dracula#palette.pink
 let s:purple    = g:dracula#palette.purple
 let s:red       = g:dracula#palette.red
 let s:yellow    = g:dracula#palette.yellow
+let s:blue      = g:dracula#palette.blue
 
 let s:none      = ['NONE', 'NONE']
 
@@ -202,7 +203,7 @@ call s:h('DraculaWinSeparator', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
 
 if g:dracula_high_contrast_diff
-  call s:h('DraculaDiffChange', s:red, s:green)
+  call s:h('DraculaDiffChange', s:red, s:blue)
 else
   call s:h('DraculaDiffChange', s:orange, s:none)
 endif

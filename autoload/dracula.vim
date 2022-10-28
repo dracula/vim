@@ -20,6 +20,7 @@ let g:dracula#palette.pink      = ['#FF79C6', 212]
 let g:dracula#palette.purple    = ['#BD93F9', 141]
 let g:dracula#palette.red       = ['#FF5555', 203]
 let g:dracula#palette.yellow    = ['#F1FA8C', 228]
+let g:dracula#palette.blue      = ['#003399',  18]
 
 "
 " ANSI
