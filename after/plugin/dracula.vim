@@ -125,7 +125,7 @@ if exists('g:loaded_nvim_treesitter')
     hi! link @constructor DraculaCyan
     " # Keywords
     hi! link @label DraculaPurpleItalic
-    hi! link @keyword.function DraculaCyan
+    hi! link @keyword.function DraculaPink
     hi! link @keyword.operator Operator
     hi! link @exception DraculaPurple
     " # Variable
