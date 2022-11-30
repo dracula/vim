@@ -100,7 +100,7 @@ if exists('g:loaded_nvim_treesitter')
   " which in turn links to Identifer (white).
   hi! link TSTagAttribute DraculaGreenItalic
 
-  if has('nvim-0.8')
+  if has('nvim-0.8.1')
     " # Misc
     hi! link @punctuation.delimiter Delimiter
     hi! link @punctuation.bracket Normal
