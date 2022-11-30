@@ -139,6 +139,8 @@ if exists('g:loaded_nvim_treesitter')
     hi! link @text.title DraculaYellow
     hi! link @text.literal DraculaYellow
     hi! link @text.uri DraculaYellow
+    hi! link @text.diff.add DiffAdd
+    hi! link @text.diff.delete DiffDelete
     " # Tags
     hi! link @tag DraculaCyan
     hi! link @tag.delimiter Normal
