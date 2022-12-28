@@ -47,7 +47,7 @@ if exists('g:loaded_gitgutter')
   hi! link GitGutterChange DiffChange
   hi! link GitGutterDelete DiffDelete
 endif
-if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
+if has('nvim-0.5') && luaeval("package.loaded.gitsigns ~= nil")
   " https://github.com/lewis6991/gitsigns.nvim requires nvim > 0.5
   " has('nvim-0.5') checks >= 0.5, so this should be future-proof.
   hi! link GitSignsAdd      DiffAdd
