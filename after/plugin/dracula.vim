@@ -56,9 +56,18 @@ if has('nvim-0.5') && luaeval("pcall(require, 'gitsigns')")
   hi! link GitSignsChange   DiffChange
   hi! link GitSignsChangeLn DiffChange
   hi! link GitSignsChangeNr DiffChange
-  hi! link GitSignsDelete   DiffDelete
-  hi! link GitSignsDeleteLn DiffDelete
-  hi! link GitSignsDeleteNr DiffDelete
+
+  " Manually set `GitSignsDelete` when in a terminal where `g:dracula_colorterm`
+  " is false to remain consistent with the other GitSigns highlights.
+  if g:dracula_colorterm || has('gui_running') 
+    hi! link GitSignsDelete DiffDelete
+  else
+    hi! link GitSignsDelete DraculaRed
+  endif
+  " GitSignsDeleteLn and GitSignsDeleteNr should always match
+  " whatever GitSignsDelete is set to.
+  hi! link GitSignsDeleteLn GitSignsDelete
+  hi! link GitSignsDeleteNr GitSignsDelete
 endif
 " }}}
 " Tree-sitter: {{{
