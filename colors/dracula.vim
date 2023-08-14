@@ -210,7 +210,7 @@ else
 endif
 
 call s:h('DraculaDiffText', s:bg, s:orange)
-call s:h('DraculaInlayHint', s:comment, s:bgdark, [s:attrs.italic])
+call s:h('DraculaInlayHint', s:comment, s:bgdark)
 
 " }}}2
 
