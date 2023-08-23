@@ -210,6 +210,7 @@ else
 endif
 
 call s:h('DraculaDiffText', s:bg, s:orange)
+call s:h('DraculaInlayHint', s:comment, s:bgdark)
 
 " }}}2
 
@@ -283,6 +284,7 @@ if has('nvim')
   hi! link LspDiagnosticsUnderlineHint DiagnosticUnderlineHint
   hi! link LspDiagnosticsUnderlineInformation DiagnosticUnderlineInfo
   hi! link LspDiagnosticsUnderlineWarning DiagnosticUnderlineWarn
+  hi! link LspInlayHint DraculaInlayHint
 
   hi! link DiagnosticInfo DraculaCyan
   hi! link DiagnosticHint DraculaCyan
