@@ -296,6 +296,24 @@ if has('nvim')
   hi! link DiagnosticUnderlineWarn DraculaWarnLine
 
   hi! link WinSeparator DraculaWinSeparator
+
+  if has('nvim-0.9')
+    hi! link  @lsp.type.class DraculaCyan
+    hi! link  @lsp.type.decorator DraculaGreen
+    hi! link  @lsp.type.enum DraculaCyan
+    hi! link  @lsp.type.enumMember DraculaPurple
+    hi! link  @lsp.type.function DraculaGreen
+    hi! link  @lsp.type.interface DraculaCyan
+    hi! link  @lsp.type.macro DraculaCyan
+    hi! link  @lsp.type.method DraculaGreen
+    hi! link  @lsp.type.namespace DraculaCyan
+    hi! link  @lsp.type.parameter DraculaOrangeItalic
+    hi! link  @lsp.type.property DraculaOrange
+    hi! link  @lsp.type.struct DraculaCyan
+    hi! link  @lsp.type.type DraculaCyanItalic
+    hi! link  @lsp.type.typeParameter DraculaPink
+    hi! link  @lsp.type.variable DraculaFg
+  endif
 else
   hi! link SpecialKey DraculaPink
 endif
