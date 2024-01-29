@@ -106,19 +106,28 @@ if exists('g:loaded_nvim_treesitter')
     hi! link @punctuation.delimiter Delimiter
     hi! link @punctuation.bracket DraculaFg
     hi! link @punctuation.special Special
+    hi! link @punctuation Delimiter
     " # Constants
     hi! link @constant Constant
     hi! link @constant.builtin Constant
     hi! link @constant.macro Macro
-    hi! link @string.regex String
-    hi! link @string.escape Character
+    hi! link @string.regex @string.special
+    hi! link @string.escape @string.special
+    hi! link @string String
+    hi! link @string.regexp @string.special
+    hi! link @string.special SpecialChar
+    hi! link @string.special.symbol DraculaPurple
+    hi! link @string.special.url Underlined
     hi! link @symbol DraculaPurple
     hi! link @annotation DraculaYellow
     hi! link @attribute DraculaGreenItalic
     hi! link @namespace Structure
+    hi! link @module Structure
+    hi! link @module.builtin Special
     " # Functions
     hi! link @function.builtin DraculaCyan
     hi! link @funcion.macro Function
+    hi! link @function Function
     hi! link @parameter DraculaOrangeItalic
     hi! link @parameter.reference DraculaOrange
     hi! link @field DraculaOrange
@@ -128,10 +137,22 @@ if exists('g:loaded_nvim_treesitter')
     hi! link @label DraculaPurpleItalic
     hi! link @keyword.function DraculaPink
     hi! link @keyword.operator Operator
+    hi! link @keyword Keyword
     hi! link @exception DraculaPurple
+    hi! link @operator Operator
+    " # Types
+    hi! link @type Type
+    hi! link @type.builtin Special
+    hi! link @character Character
+    hi! link @character.special SpecialChar
+    hi! link @boolean Boolean
+    hi! link @number Number
+    hi! link @number.float Float
     " # Variable
     hi! link @variable DraculaFg
     hi! link @variable.builtin DraculaPurpleItalic
+    hi! link @variable.parameter DraculaOrangeItalic
+    hi! link @variable.member  DraculaOrange
     " # Text
     hi! link @text DraculaFg
     hi! link @text.strong DraculaFgBold
@@ -142,6 +163,30 @@ if exists('g:loaded_nvim_treesitter')
     hi! link @text.uri DraculaYellow
     hi! link @text.diff.add DiffAdd
     hi! link @text.diff.delete DiffDelete
+
+    hi! link @markup.strong DraculaFgBold
+    hi! link @markup.italic DraculaFgItalic
+    hi! link @markup.strikethrough DraculaFgStrikethrough
+    hi! link @markup.underline Underlined
+
+    hi! link @markup Special
+    hi! link @markup.heading DraculaYellow
+    hi! link @markup.link Underlined
+    hi! link @markup.link.uri DraculaYellow
+    hi! link @markup.link.label SpecialChar
+    hi! link @markup.raw DraculaYellow
+    hi! link @markup.list Special
+
+    hi! link @comment Comment
+    hi! link @comment.error DiagnosticError
+    hi! link @comment.warning DiagnosticWarn
+    hi! link @comment.note DiagnosticInfo
+    hi! link @comment.todo Todo
+
+    hi! link @diff.plus Added
+    hi! link @diff.minus Removed
+    hi! link @diff.delta Changed
+
     " # Tags
     hi! link @tag DraculaCyan
     hi! link @tag.delimiter DraculaFg
