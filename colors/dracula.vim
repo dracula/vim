@@ -77,6 +77,10 @@ if !exists('g:dracula_italic')
   let g:dracula_italic = 1
 endif
 
+if !exists('g:dracula_strikethrough')
+  let g:dracula_strikethrough = 1
+endif
+
 if !exists('g:dracula_underline')
   let g:dracula_underline = 1
 endif
@@ -107,6 +111,7 @@ endif
 let s:attrs = {
       \ 'bold': g:dracula_bold == 1 ? 'bold' : 0,
       \ 'italic': g:dracula_italic == 1 ? 'italic' : 0,
+      \ 'strikethrough': g:dracula_strikethrough == 1 ? 'strikethrough' : 0,
       \ 'underline': g:dracula_underline == 1 ? 'underline' : 0,
       \ 'undercurl': g:dracula_undercurl == 1 ? 'undercurl' : 0,
       \ 'inverse': g:dracula_inverse == 1 ? 'inverse' : 0,
@@ -154,6 +159,7 @@ call s:h('DraculaBgDarker', s:none, s:bgdarker)
 call s:h('DraculaFg', s:fg)
 call s:h('DraculaFgUnderline', s:fg, s:none, [s:attrs.underline])
 call s:h('DraculaFgBold', s:fg, s:none, [s:attrs.bold])
+call s:h('DraculaFgStrikethrough', s:fg, s:none, [s:attrs.strikethrough])
 
 call s:h('DraculaComment', s:comment)
 call s:h('DraculaCommentBold', s:comment, s:none, [s:attrs.bold])

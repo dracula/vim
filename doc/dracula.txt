@@ -78,6 +78,10 @@ Include bold attributes in highlighting >
 Include italic attributes in highlighting >
     let g:dracula_italic = 1
 
+* *g:dracula_strikethrough*
+Include strikethrough attributes in highlighting >
+    let g:dracula_strikethrough = 1
+
 * *g:dracula_underline*
 Include underline attributes in highlighting >
     let g:dracula_underline = 1
