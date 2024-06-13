@@ -255,6 +255,8 @@ hi! link Pmenu        DraculaBgDark
 hi! link PmenuSbar    DraculaBgDark
 hi! link PmenuSel     DraculaSelection
 hi! link PmenuThumb   DraculaSelection
+call s:h('PmenuMatch', s:cyan, s:bgdark)
+call s:h('PmenuMatchSel', s:cyan, s:selection)
 hi! link Question     DraculaFgBold
 hi! link Search       DraculaSearch
 call s:h('SignColumn', s:comment)
