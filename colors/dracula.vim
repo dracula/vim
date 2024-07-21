@@ -304,6 +304,7 @@ if has('nvim')
   hi! link DiagnosticUnderlineWarn DraculaWarnLine
 
   hi! link WinSeparator DraculaWinSeparator
+  hi! link NormalFloat Pmenu
 
   if has('nvim-0.9')
     hi! link  @lsp.type.class DraculaCyan
