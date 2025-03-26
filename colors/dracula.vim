@@ -998,7 +998,7 @@ if has('nvim')
   " Saghen/blink.cmp {{{
   hi! link BlinkCmpKindText DraculaFg
   hi! link BlinkCmpKindMethod Function
-  hi! link BlinkCmpFunction Function
+  hi! link BlinkCmpKindFunction Function
   hi! link BlinkCmpKindConstructor DraculaCyan
   hi! link BlinkCmpKindField DraculaOrange
   hi! link BlinkCmpKindVariable DraculaPurpleItalic
