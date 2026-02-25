@@ -1023,6 +1023,34 @@ if has('nvim')
   hi! link BlinkCmpKindTypeParameter DraculaCyan
   " }}}
 
+  " nvim-tree/nvim-tree.lua {{{
+  hi! link NvimTreeEmptyFolderName DraculaPurple
+  hi! link NvimTreeExecFile DraculaGreen
+  hi! link NvimTreeFolderIcon DraculaPurple
+  hi! link NvimTreeFolderName DraculaPurpleBold
+  hi! link NvimTreeGitDeleted DraculaRed
+  hi! link NvimTreeGitDirty DraculaOrange
+  hi! link NvimTreeGitNew DraculaGreen
+  hi! link NvimTreeGitStaged DraculaGreen
+  hi! link NvimTreeImageFile DraculaPink
+  hi! link NvimTreeIndentMarker DraculaComment
+  hi! link NvimTreeOpenedFolderName DraculaPurpleBold
+  hi! link NvimTreeRootFolder DraculaPurpleItalic
+  hi! link NvimTreeSymlink DraculaCyan
+  hi! link NvimTreeSymlinkFolderName DraculaPurple
+  " }}}
+
+  " nvim-mini/mini.icons {{{
+  hi! link MiniIconsAzure DraculaCyan
+  hi! link MiniIconsBlue DraculaCyan
+  hi! link MiniIconsCyan DraculaCyan
+  hi! link MiniIconsGreen DraculaGreen
+  hi! link MiniIconsGrey DraculaFg
+  hi! link MiniIconsOrange DraculaOrange
+  hi! link MiniIconsPurple DraculaPurple
+  hi! link MiniIconsRed DraculaRed
+  hi! link MiniIconsYellow DraculaYellow
+  " }}}
 endif
 " }}}
 
