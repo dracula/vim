@@ -331,6 +331,10 @@ hi! link Comment DraculaComment
 hi! link Underlined DraculaFgUnderline
 hi! link Todo DraculaTodo
 
+hi! link Added DiffAdded
+hi! link Changed DiffChange
+hi! link Removed DiffRemoved
+
 hi! link Error DraculaError
 hi! link SpellBad DraculaErrorLine
 hi! link SpellLocal DraculaWarnLine
