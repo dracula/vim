@@ -170,30 +170,35 @@ call s:h('DraculaSubtle', s:subtle)
 
 call s:h('DraculaCyan', s:cyan)
 call s:h('DraculaCyanItalic', s:cyan, s:none, [s:attrs.italic])
+call s:h('DraculaCyanInverse', s:cyan, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaGreen', s:green)
 call s:h('DraculaGreenBold', s:green, s:none, [s:attrs.bold])
 call s:h('DraculaGreenItalic', s:green, s:none, [s:attrs.italic])
 call s:h('DraculaGreenItalicUnderline', s:green, s:none, [s:attrs.italic, s:attrs.underline])
+call s:h('DraculaGreenInverse', s:green, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaOrange', s:orange)
 call s:h('DraculaOrangeBold', s:orange, s:none, [s:attrs.bold])
 call s:h('DraculaOrangeItalic', s:orange, s:none, [s:attrs.italic])
 call s:h('DraculaOrangeBoldItalic', s:orange, s:none, [s:attrs.bold, s:attrs.italic])
-call s:h('DraculaOrangeInverse', s:bg, s:orange)
+call s:h('DraculaOrangeInverse', s:orange, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaPink', s:pink)
 call s:h('DraculaPinkItalic', s:pink, s:none, [s:attrs.italic])
+call s:h('DraculaPinkInverse', s:pink, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaPurple', s:purple)
 call s:h('DraculaPurpleBold', s:purple, s:none, [s:attrs.bold])
 call s:h('DraculaPurpleItalic', s:purple, s:none, [s:attrs.italic])
+call s:h('DraculaPurpleInverse', s:purple, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaRed', s:red)
-call s:h('DraculaRedInverse', s:fg, s:red)
+call s:h('DraculaRedInverse', s:red, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaYellow', s:yellow)
 call s:h('DraculaYellowItalic', s:yellow, s:none, [s:attrs.italic])
+call s:h('DraculaYellowInverse', s:yellow, s:bg, [s:attrs.inverse])
 
 call s:h('DraculaError', s:red, s:none, [], s:red)
 
@@ -202,7 +207,6 @@ call s:h('DraculaWarnLine', s:none, s:none, [s:attrs.undercurl], s:orange)
 call s:h('DraculaInfoLine', s:none, s:none, [s:attrs.undercurl], s:cyan)
 
 call s:h('DraculaTodo', s:cyan, s:none, [s:attrs.bold, s:attrs.inverse])
-call s:h('DraculaSearch', s:green, s:none, [s:attrs.inverse])
 call s:h('DraculaBoundary', s:comment, s:bgdark)
 call s:h('DraculaWinSeparator', s:comment, s:bgdark)
 call s:h('DraculaLink', s:cyan, s:none, [s:attrs.underline])
@@ -233,6 +237,9 @@ call s:h('StatusLineTerm', s:none, s:bglighter, [s:attrs.bold])
 call s:h('StatusLineTermNC', s:none, s:bglight)
 call s:h('WildMenu', s:bg, s:purple, [s:attrs.bold])
 call s:h('CursorLine', s:none, s:subtle)
+
+" Maintain the DraculaSearch group for backwards compatibility.
+hi! link DraculaSearch DraculaGreenInverse
 
 hi! link ColorColumn  DraculaBgDark
 hi! link CursorColumn CursorLine
