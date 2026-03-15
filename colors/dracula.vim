@@ -1062,6 +1062,19 @@ if has('nvim')
   hi! link MiniIconsRed DraculaRed
   hi! link MiniIconsYellow DraculaYellow
   " }}}
+
+  " nvim-mini/mini.statusline {{{
+  hi! link MiniStatuslineDevInfo StatusLine
+  hi! link MiniStatuslineFileInfo StatusLine
+  hi! link MiniStatuslineFilename StatusLineNC
+  hi! link MiniStatuslineInactive StatusLineNC
+  hi! link MiniStatuslineModeCommand DraculaCyanInverse
+  hi! link MiniStatuslineModeInsert DraculaGreenInverse
+  hi! link MiniStatuslineModeNormal DraculaPurpleInverse
+  hi! link MiniStatuslineModeOther DraculaGreenInverse
+  hi! link MiniStatuslineModeReplace DraculaOrangeInverse
+  hi! link MiniStatuslineModeVisual DraculaYellowInverse
+  " }}}
 endif
 " }}}
 
