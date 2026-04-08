@@ -1,6 +1,6 @@
 " Dracula Theme: {{{
 "
-" https://github.com/zenorocha/dracula-theme
+" https://github.com/dracula/vim
 "
 " Copyright 2016, All rights reserved
 "
