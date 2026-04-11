@@ -1,6 +1,6 @@
 " Dracula Theme: {{{
 "
-" https://github.com/dracula/vim
+" https://github.com/dracula/dracula-theme
 "
 " Copyright 2016, All rights reserved
 "
