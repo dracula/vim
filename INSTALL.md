@@ -41,7 +41,7 @@ git clone https://github.com/dracula/vim.git dracula
 
 4. Edit your `vimrc` file with the following content:
 
-```
+```vim
 if v:version < 802
     packadd! dracula
 endif
