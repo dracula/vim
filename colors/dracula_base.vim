@@ -227,8 +227,6 @@ call s:h('DraculaInlayHint', s:comment, s:bgdark)
 " }}}
 " User Interface: {{{
 
-set background=dark
-
 " Required as some plugins will overwrite
 call s:h('Normal', s:fg, g:dracula_colorterm || has('gui_running') ? s:bg : s:none )
 call s:h('StatusLine', s:none, s:bglighter, [s:attrs.bold])
