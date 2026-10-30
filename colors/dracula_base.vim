@@ -274,6 +274,10 @@ hi! link Visual       DraculaSelection
 hi! link VisualNOS    Visual
 hi! link WarningMsg   DraculaOrangeInverse
 
+if has('gui_running')
+  hi! link Terminal Normal
+endif
+
 " }}}
 " Syntax: {{{
 
